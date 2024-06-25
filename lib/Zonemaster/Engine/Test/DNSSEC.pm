@@ -1036,19 +1036,19 @@ Readonly my %TAG_DESCRIPTIONS => (
     },
     DS10_NAME_NOT_COVERED_BY_NSEC => sub {
         __x    # DNSSEC:DS10_NAME_NOT_COVERED_BY_NSEC
-          'A non-existent name is not correctly covered by the NSEC records. Fetched from '
+          'A nonexistent name is not correctly covered by the NSEC records. Fetched from '
           . 'the nameservers with IP addresses "{ns_ip_list}".',
           @_;
     },
     DS10_NAME_NOT_COVERED_BY_NSEC3 => sub {
         __x    # DNSSEC:DS10_NAME_NOT_COVERED_BY_NSEC3
-          'A non-existent name is not correctly covered by the NSEC3 records. Fetched from '
+          'A nonexistent name is not correctly covered by the NSEC3 records. Fetched from '
           . 'the nameservers with IP addresses "{ns_ip_list}".',
           @_;
     },
     DS10_NON_EXISTENT_RESPONSE_ERROR => sub {
         __x    # DNSSEC:DS10_NON_EXISTENT_RESPONSE_ERROR
-          'No response or error in response on an expected non-existent name. Fetched from '
+          'No response or error in response on an expected nonexistent name. Fetched from '
           . 'the nameservers with IP addresses "{ns_ip_list}".',
           @_;
     },
@@ -3043,10 +3043,10 @@ sub dnssec10 {
         #
         # Testing zones :
         # SHOULD NOT PASS
-        # - dnssec10-non-existent-domain-name-exists-01.zft-root.rd.nic.fr
-        # - dnssec10-non-existent-domain-name-exists-02.zft-root.rd.nic.fr
+        # - dnssec10-nonexistent-domain-name-exists-01.zft-root.rd.nic.fr
+        # - dnssec10-nonexistent-domain-name-exists-02.zft-root.rd.nic.fr
         # SHOULD PASS
-        # - dnssec10-non-existent-domain-name-exists-03.zft-root.rd.nic.fr
+        # - dnssec10-nonexistent-domain-name-exists-03.zft-root.rd.nic.fr
         #----------------------------------------------------------------------
         if ( $a_p->rcode eq q{NOERROR} ) {
             my $step_a = 1;
@@ -3111,7 +3111,7 @@ sub dnssec10 {
         #
         # Testing zones :
         # SHOULD NOT PASS
-        # - dnssec10-non-existent-domain-name-exists-04.zft-root.rd.nic.fr
+        # - dnssec10-nonexistent-domain-name-exists-04.zft-root.rd.nic.fr
         #----------------------------------------------------------------------
         if ( $a_p->rcode eq q{NOERROR} ) {
             my $step_a = 1;
@@ -3181,7 +3181,7 @@ sub dnssec10 {
         #
         # Testing zones :
         # DS10_ANSWER_VERIFY_ERROR
-        # - dnssec10-non-existent-domain-name-exists-05.zft-root.rd.nic.fr
+        # - dnssec10-nonexistent-domain-name-exists-05.zft-root.rd.nic.fr
         #----------------------------------------------------------------------
         my @rrset;
         push @rrset, @a_records, @cname_records;
