@@ -350,7 +350,7 @@ Readonly my %TAG_DESCRIPTIONS => (
     },
     AXFR_FAILURE => sub {
         __x    # NAMESERVER:AXFR_FAILURE
-          'AXFR not available on nameserver {ns}.', @_;
+          'AXFR not available on name server {ns}.', @_;
     },
     BREAKS_ON_EDNS => sub {
         __x    # NAMESERVER:BREAKS_ON_EDNS
@@ -375,28 +375,28 @@ Readonly my %TAG_DESCRIPTIONS => (
     CASE_QUERY_DIFFERENT_ANSWER => sub {
         __x    # NAMESERVER:CASE_QUERY_DIFFERENT_ANSWER
           'When asked for {type} records on "{query1}" and "{query2}", '
-          . 'nameserver {ns} returns different answers.',
+          . 'name server {ns} returns different answers.',
           @_;
     },
     CASE_QUERY_DIFFERENT_RC => sub {
         __x    # NAMESERVER:CASE_QUERY_DIFFERENT_RC
           'When asked for {type} records on "{query1}" and "{query2}", '
-          . 'nameserver {ns} returns different RCODE ("{rcode1}" vs "{rcode2}").',
+          . 'name server {ns} returns different RCODE ("{rcode1}" vs "{rcode2}").',
           @_;
     },
     CASE_QUERY_NO_ANSWER => sub {
         __x    # NAMESERVER:CASE_QUERY_NO_ANSWER
-          'When asked for {type} records on "{domain}", nameserver {ns} returns nothing.', @_;
+          'When asked for {type} records on "{domain}", name server {ns} returns nothing.', @_;
     },
     CASE_QUERY_SAME_ANSWER => sub {
         __x    # NAMESERVER:CASE_QUERY_SAME_ANSWER
-          'When asked for {type} records on "{query1}" and "{query2}", nameserver {ns} returns same answers.',
+          'When asked for {type} records on "{query1}" and "{query2}", name server {ns} returns same answers.',
           @_;
     },
     CASE_QUERY_SAME_RC => sub {
         __x    # NAMESERVER:CASE_QUERY_SAME_RC
           'When asked for {type} records on "{query1}" and "{query2}", '
-          . 'nameserver {ns} returns same RCODE "{rcode}".',
+          . 'name server {ns} returns same RCODE "{rcode}".',
           @_;
     },
     DIFFERENT_SOURCE_IP => sub {
@@ -443,7 +443,7 @@ Readonly my %TAG_DESCRIPTIONS => (
     },
     NO_RESOLUTION => sub {
         __x    # NAMESERVER:NO_RESOLUTION
-          "No nameserver was successfully resolved to an IP address.", @_;
+          "No name server was successfully resolved to an IP address.", @_;
     },
     NO_RESPONSE => sub {
         __x    # NAMESERVER:NO_RESPONSE
@@ -455,7 +455,7 @@ Readonly my %TAG_DESCRIPTIONS => (
     },
     NS_ERROR => sub {
         __x    # NAMESERVER:NS_ERROR
-          'Erroneous response from nameserver {ns}.', @_;
+          'Erroneous response from name server {ns}.', @_;
     },
     N10_EDNS_RESPONSE_ERROR => sub {
         __x    # NAMESERVER:N10_EDNS_RESPONSE_ERROR

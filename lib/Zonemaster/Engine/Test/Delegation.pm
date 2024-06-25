@@ -251,11 +251,11 @@ Readonly my %TAG_DESCRIPTIONS => (
     },
     EXTRA_NAME_CHILD => sub {
         __x    # DELEGATION:EXTRA_NAME_CHILD
-          "Child has nameserver(s) not listed at parent ({extra}).", @_;
+          "Child has name server(s) not listed at parent ({extra}).", @_;
     },
     EXTRA_NAME_PARENT => sub {
         __x    # DELEGATION:EXTRA_NAME_PARENT
-          "Parent has nameserver(s) not listed at the child ({extra}).", @_;
+          "Parent has name server(s) not listed at the child ({extra}).", @_;
     },
     IPV4_DISABLED => sub {
         __x    # DELEGATION:IPV4_DISABLED
@@ -271,7 +271,7 @@ Readonly my %TAG_DESCRIPTIONS => (
     },
     NAMES_MATCH => sub {
         __x    # DELEGATION:NAMES_MATCH
-          "All of the nameserver names are listed both at parent and child.", @_;
+          "All of the name server names are listed both at parent and child.", @_;
     },
     NO_RESPONSE => sub {
         __x    # DELEGATION:NO_RESPONSE
@@ -311,25 +311,25 @@ Readonly my %TAG_DESCRIPTIONS => (
     },
     NO_IPV4_NS_CHILD => sub {
         __x    # DELEGATION:NO_IPV4_NS_CHILD
-          "Child lists no nameserver that resolves to an IPv4 address. "
+          "Child lists no name server that resolves to an IPv4 address. "
           . "If any were present, the minimum allowed would be {minimum}.",
           @_;
     },
     NO_IPV4_NS_DEL => sub {
         __x    # DELEGATION:NO_IPV4_NS_DEL
-          "Delegation lists no nameserver that resolves to an IPv4 address. "
+          "Delegation lists no name server that resolves to an IPv4 address. "
           . "If any were present, the minimum allowed would be {minimum}.",
           @_;
     },
     NO_IPV6_NS_CHILD => sub {
         __x    # DELEGATION:NO_IPV6_NS_CHILD
-          "Child lists no nameserver that resolves to an IPv6 address. "
+          "Child lists no name server that resolves to an IPv6 address. "
           . "If any were present, the minimum allowed would be {minimum}.",
           @_;
     },
     NO_IPV6_NS_DEL => sub {
         __x    # DELEGATION:NO_IPV6_NS_DEL
-          "Delegation lists no nameserver that resolves to an IPv6 address. "
+          "Delegation lists no name server that resolves to an IPv6 address. "
           . "If any were present, the minimum allowed would be {minimum}.",
           @_;
     },
@@ -339,7 +339,7 @@ Readonly my %TAG_DESCRIPTIONS => (
     },
     NO_NS_CNAME => sub {
         __x    # DELEGATION:NO_NS_CNAME
-          "No nameserver points to CNAME alias.", @_;
+          "No name server points to CNAME alias.", @_;
     },
     REFERRAL_SIZE_TOO_LARGE => sub {
         __x    # DELEGATION:REFERRAL_SIZE_TOO_LARGE

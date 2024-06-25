@@ -224,7 +224,7 @@ sub metadata {
 Readonly my %TAG_DESCRIPTIONS => (
     ZONE01 => sub {
         __x    # ZONE:ZONE01
-          'Fully qualified master nameserver in SOA';
+          'Fully qualified master name server in SOA';
     },
     ZONE02 => sub {
         __x    # ZONE:ZONE02
@@ -336,19 +336,19 @@ Readonly my %TAG_DESCRIPTIONS => (
     },
     NO_RESPONSE_SOA_QUERY => sub {
         __x    # ZONE:NO_RESPONSE_SOA_QUERY
-          'No response from nameserver(s) on SOA queries.';
+          'No response from name server(s) on SOA queries.';
     },
     NO_RESPONSE_MX_QUERY => sub {
         __x    # ZONE:NO_RESPONSE_MX_QUERY
-          'No response from nameserver(s) on MX queries.';
+          'No response from name server(s) on MX queries.';
     },
     NO_SOA_IN_RESPONSE => sub {
         __x    # ZONE:NO_SOA_IN_RESPONSE
-          'Response from nameserver {ns} on SOA queries does not contain SOA record.', @_;
+          'Response from name server {ns} on SOA queries does not contain SOA record.', @_;
     },
     MNAME_HAS_NO_ADDRESS => sub {
         __x    # ZONE:MNAME_HAS_NO_ADDRESS
-          'No IP address found for SOA \'mname\' nameserver ({mname}).', @_;
+          'No IP address found for SOA \'mname\' name server ({mname}).', @_;
     },
     ONE_SOA => sub {
         __x    # ZONE:ONE_SOA
