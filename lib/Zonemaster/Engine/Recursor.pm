@@ -394,7 +394,7 @@ The keys of the second level hashes are name server names (normalized to lower
 case).
 The elements of the third level arrayrefs are IP addresses.
 
-The IP addresses are those of the nameservers which are used in case of fake
+The IP addresses are those of the name servers which are used in case of fake
 delegations (pre-publication tests).
 
 =head1 CLASS METHODS
@@ -430,7 +430,7 @@ Class method to create fake adresses for fake delegations for a specified domain
 
 =head2 has_fake_addresses($domain)
 
-Check if there is at least one fake nameserver specified for the given domain.
+Check if there is at least one fake name server specified for the given domain.
 
 =head2 get_fake_addresses($domain, $nsname)
 

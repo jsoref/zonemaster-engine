@@ -146,7 +146,7 @@ Readonly my %TAG_DESCRIPTIONS => (
     },
     NO_RESPONSE_PTR_QUERY => sub {
         __x    # ADDRESS:NO_RESPONSE_PTR_QUERY
-          'No response from nameserver(s) on PTR query ({domain}).', @_;
+          'No response from name server(s) on PTR query ({domain}).', @_;
     },
     TEST_CASE_END => sub {
         __x    # ADDRESS:TEST_CASE_END

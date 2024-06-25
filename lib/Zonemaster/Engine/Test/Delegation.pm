@@ -195,67 +195,67 @@ Readonly my %TAG_DESCRIPTIONS => (
     },
     ARE_AUTHORITATIVE => sub {
         __x    # DELEGATION:ARE_AUTHORITATIVE
-          "All these nameservers are confirmed to be authoritative : {nsname_list}.", @_;
+          "All these name servers are confirmed to be authoritative : {nsname_list}.", @_;
     },
     CHILD_DISTINCT_NS_IP => sub {
         __x    # DELEGATION:CHILD_DISTINCT_NS_IP
-          "All the IP addresses used by the nameservers in child are unique.", @_;
+          "All the IP addresses used by the name servers in child are unique.", @_;
     },
     CHILD_NS_SAME_IP => sub {
         __x    # DELEGATION:CHILD_NS_SAME_IP
-          "IP {ns_ip} in child refers to multiple nameservers ({nsname_list}).", @_;
+          "IP {ns_ip} in child refers to multiple name servers ({nsname_list}).", @_;
     },
     DEL_DISTINCT_NS_IP => sub {
         __x    # DELEGATION:DEL_DISTINCT_NS_IP
-          "All the IP addresses used by the nameservers in parent are unique.", @_;
+          "All the IP addresses used by the name servers in parent are unique.", @_;
     },
     DEL_NS_SAME_IP => sub {
         __x    # DELEGATION:DEL_NS_SAME_IP
-          "IP {ns_ip} in parent refers to multiple nameservers ({nsname_list}).", @_;
+          "IP {ns_ip} in parent refers to multiple name servers ({nsname_list}).", @_;
     },
     DISTINCT_IP_ADDRESS => sub {
         __x    # DELEGATION:DISTINCT_IP_ADDRESS
-          "All the IP addresses used by the nameservers are unique.", @_;
+          "All the IP addresses used by the name servers are unique.", @_;
     },
     ENOUGH_IPV4_NS_CHILD => sub {
         __x    # DELEGATION:ENOUGH_IPV4_NS_CHILD
-          "Child lists enough ({count}) nameservers that resolve to IPv4 "
+          "Child lists enough ({count}) name servers that resolve to IPv4 "
           . "addresses. Lower limit set to {minimum}. Name servers: {ns_list}",
           @_;
     },
     ENOUGH_IPV4_NS_DEL => sub {
         __x    # DELEGATION:ENOUGH_IPV4_NS_DEL
-          "Delegation lists enough ({count}) nameservers that resolve to IPv4 "
+          "Delegation lists enough ({count}) name servers that resolve to IPv4 "
           . "addresses. Lower limit set to {minimum}. Name servers: {ns_list}",
           @_;
     },
     ENOUGH_IPV6_NS_CHILD => sub {
         __x    # DELEGATION:ENOUGH_IPV6_NS_CHILD
-          "Child lists enough ({count}) nameservers that resolve to IPv6 "
+          "Child lists enough ({count}) name servers that resolve to IPv6 "
           . "addresses. Lower limit set to {minimum}. Name servers: {ns_list}",
           @_;
     },
     ENOUGH_IPV6_NS_DEL => sub {
         __x    # DELEGATION:ENOUGH_IPV6_NS_DEL
-          "Delegation lists enough ({count}) nameservers that resolve to IPv6 "
+          "Delegation lists enough ({count}) name servers that resolve to IPv6 "
           . "addresses. Lower limit set to {minimum}. Name servers: {ns_list}",
           @_;
     },
     ENOUGH_NS_CHILD => sub {
         __x    # DELEGATION:ENOUGH_NS_CHILD
-          "Child lists enough ({count}) nameservers. Lower limit set to {minimum}. Name servers: {nsname_list}", @_;
+          "Child lists enough ({count}) name servers. Lower limit set to {minimum}. Name servers: {nsname_list}", @_;
     },
     ENOUGH_NS_DEL => sub {
         __x    # DELEGATION:ENOUGH_NS_DEL
-          "Delegation lists enough ({count}) nameservers. Lower limit set to {minimum}. Name servers: {nsname_list}", @_;
+          "Delegation lists enough ({count}) name servers. Lower limit set to {minimum}. Name servers: {nsname_list}", @_;
     },
     EXTRA_NAME_CHILD => sub {
         __x    # DELEGATION:EXTRA_NAME_CHILD
-          "Child has nameserver(s) not listed at parent ({extra}).", @_;
+          "Child has name server(s) not listed at parent ({extra}).", @_;
     },
     EXTRA_NAME_PARENT => sub {
         __x    # DELEGATION:EXTRA_NAME_PARENT
-          "Parent has nameserver(s) not listed at the child ({extra}).", @_;
+          "Parent has name server(s) not listed at the child ({extra}).", @_;
     },
     IPV4_DISABLED => sub {
         __x    # DELEGATION:IPV4_DISABLED
@@ -271,7 +271,7 @@ Readonly my %TAG_DESCRIPTIONS => (
     },
     NAMES_MATCH => sub {
         __x    # DELEGATION:NAMES_MATCH
-          "All of the nameserver names are listed both at parent and child.", @_;
+          "All of the name server names are listed both at parent and child.", @_;
     },
     NO_RESPONSE => sub {
         __x    # DELEGATION:NO_RESPONSE
@@ -279,57 +279,57 @@ Readonly my %TAG_DESCRIPTIONS => (
     },
     NOT_ENOUGH_IPV4_NS_CHILD => sub {
         __x    # DELEGATION:NOT_ENOUGH_IPV4_NS_CHILD
-          "Child does not list enough ({count}) nameservers that resolve to IPv4 "
+          "Child does not list enough ({count}) name servers that resolve to IPv4 "
           . "addresses. Lower limit set to {minimum}. Name servers: {ns_list}",
           @_;
     },
     NOT_ENOUGH_IPV4_NS_DEL => sub {
         __x    # DELEGATION:NOT_ENOUGH_IPV4_NS_DEL
-          "Delegation does not list enough ({count}) nameservers that resolve to IPv4 "
+          "Delegation does not list enough ({count}) name servers that resolve to IPv4 "
           . "addresses. Lower limit set to {minimum}. Name servers: {ns_list}",
           @_;
     },
     NOT_ENOUGH_IPV6_NS_CHILD => sub {
         __x    # DELEGATION:NOT_ENOUGH_IPV6_NS_CHILD
-          "Child does not list enough ({count}) nameservers that resolve to IPv6 "
+          "Child does not list enough ({count}) name servers that resolve to IPv6 "
           . "addresses. Lower limit set to {minimum}. Name servers: {ns_list}",
           @_;
     },
     NOT_ENOUGH_IPV6_NS_DEL => sub {
         __x    # DELEGATION:NOT_ENOUGH_IPV6_NS_DEL
-          "Delegation does not list enough ({count}) nameservers that resolve to IPv6 "
+          "Delegation does not list enough ({count}) name servers that resolve to IPv6 "
           . "addresses. Lower limit set to {minimum}. Name servers: {ns_list}",
           @_;
     },
     NOT_ENOUGH_NS_CHILD => sub {
         __x    # DELEGATION:NOT_ENOUGH_NS_CHILD
-          "Child does not list enough ({count}) nameservers. Lower limit set to {minimum}. Name servers: {nsname_list}", @_;
+          "Child does not list enough ({count}) name servers. Lower limit set to {minimum}. Name servers: {nsname_list}", @_;
     },
     NOT_ENOUGH_NS_DEL => sub {
         __x    # DELEGATION:NOT_ENOUGH_NS_DEL
-          "Delegation does not list enough ({count}) nameservers. Lower limit set to {minimum}. Name servers: {nsname_list}", @_;
+          "Delegation does not list enough ({count}) name servers. Lower limit set to {minimum}. Name servers: {nsname_list}", @_;
     },
     NO_IPV4_NS_CHILD => sub {
         __x    # DELEGATION:NO_IPV4_NS_CHILD
-          "Child lists no nameserver that resolves to an IPv4 address. "
+          "Child lists no name server that resolves to an IPv4 address. "
           . "If any were present, the minimum allowed would be {minimum}.",
           @_;
     },
     NO_IPV4_NS_DEL => sub {
         __x    # DELEGATION:NO_IPV4_NS_DEL
-          "Delegation lists no nameserver that resolves to an IPv4 address. "
+          "Delegation lists no name server that resolves to an IPv4 address. "
           . "If any were present, the minimum allowed would be {minimum}.",
           @_;
     },
     NO_IPV6_NS_CHILD => sub {
         __x    # DELEGATION:NO_IPV6_NS_CHILD
-          "Child lists no nameserver that resolves to an IPv6 address. "
+          "Child lists no name server that resolves to an IPv6 address. "
           . "If any were present, the minimum allowed would be {minimum}.",
           @_;
     },
     NO_IPV6_NS_DEL => sub {
         __x    # DELEGATION:NO_IPV6_NS_DEL
-          "Delegation lists no nameserver that resolves to an IPv6 address. "
+          "Delegation lists no name server that resolves to an IPv6 address. "
           . "If any were present, the minimum allowed would be {minimum}.",
           @_;
     },
@@ -339,7 +339,7 @@ Readonly my %TAG_DESCRIPTIONS => (
     },
     NO_NS_CNAME => sub {
         __x    # DELEGATION:NO_NS_CNAME
-          "No nameserver points to CNAME alias.", @_;
+          "No name server points to CNAME alias.", @_;
     },
     REFERRAL_SIZE_TOO_LARGE => sub {
         __x    # DELEGATION:REFERRAL_SIZE_TOO_LARGE
@@ -351,11 +351,11 @@ Readonly my %TAG_DESCRIPTIONS => (
     },
     SAME_IP_ADDRESS => sub {
         __x    # DELEGATION:SAME_IP_ADDRESS
-          "IP {ns_ip} refers to multiple nameservers ({nsname_list}).", @_;
+          "IP {ns_ip} refers to multiple name servers ({nsname_list}).", @_;
     },
     SOA_EXISTS => sub {
         __x    # DELEGATION:SOA_EXISTS
-          "All the nameservers have SOA record.", @_;
+          "All the name servers have SOA record.", @_;
     },
     SOA_NOT_EXISTS => sub {
         __x    # DELEGATION:SOA_NOT_EXISTS
@@ -371,7 +371,7 @@ Readonly my %TAG_DESCRIPTIONS => (
     },
     TOTAL_NAME_MISMATCH => sub {
         __x    # DELEGATION:TOTAL_NAME_MISMATCH
-          "None of the nameservers listed at the parent are listed at the child.", @_;
+          "None of the name servers listed at the parent are listed at the child.", @_;
     },
     UNEXPECTED_RCODE => sub {
         __x    # DELEGATION:UNEXPECTED_RCODE

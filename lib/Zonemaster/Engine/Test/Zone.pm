@@ -224,7 +224,7 @@ sub metadata {
 Readonly my %TAG_DESCRIPTIONS => (
     ZONE01 => sub {
         __x    # ZONE:ZONE01
-          'Fully qualified master nameserver in SOA';
+          'Fully qualified master name server in SOA';
     },
     ZONE02 => sub {
         __x    # ZONE:ZONE02
@@ -336,23 +336,23 @@ Readonly my %TAG_DESCRIPTIONS => (
     },
     NO_RESPONSE_SOA_QUERY => sub {
         __x    # ZONE:NO_RESPONSE_SOA_QUERY
-          'No response from nameserver(s) on SOA queries.';
+          'No response from name server(s) on SOA queries.';
     },
     NO_RESPONSE_MX_QUERY => sub {
         __x    # ZONE:NO_RESPONSE_MX_QUERY
-          'No response from nameserver(s) on MX queries.';
+          'No response from name server(s) on MX queries.';
     },
     NO_SOA_IN_RESPONSE => sub {
         __x    # ZONE:NO_SOA_IN_RESPONSE
-          'Response from nameserver {ns} on SOA queries does not contain SOA record.', @_;
+          'Response from name server {ns} on SOA queries does not contain SOA record.', @_;
     },
     MNAME_HAS_NO_ADDRESS => sub {
         __x    # ZONE:MNAME_HAS_NO_ADDRESS
-          'No IP address found for SOA \'mname\' nameserver ({mname}).', @_;
+          'No IP address found for SOA \'mname\' name server ({mname}).', @_;
     },
     ONE_SOA => sub {
         __x    # ZONE:ONE_SOA
-          'A unique SOA record is returned by all nameservers of the zone.', @_;
+          'A unique SOA record is returned by all name servers of the zone.', @_;
     },
     EXPIRE_MINIMUM_VALUE_OK => sub {
         __x    # ZONE:EXPIRE_MINIMUM_VALUE_OK
@@ -494,7 +494,7 @@ Readonly my %TAG_DESCRIPTIONS => (
     },
     Z11_SPF1_SYNTAX_ERROR => sub {
         __x    # ZONE:Z11_SPF1_SYNTAX_ERROR
-          'The SPF version 1 policy has a syntax error. Policy retrieved from the following nameservers: {ns_ip_list}.', @_;
+          'The SPF version 1 policy has a syntax error. Policy retrieved from the following name servers: {ns_ip_list}.', @_;
     },
     Z11_SPF1_SYNTAX_OK => sub {
         __x    # ZONE:Z11_SPF1_SYNTAX_OK
@@ -1504,7 +1504,7 @@ sub zone11 {
     local $Zonemaster::Engine::Logger::TEST_CASE_NAME = 'Zone11';
     push my @results, _emit_log( TEST_CASE_START => { testcase => $Zonemaster::Engine::Logger::TEST_CASE_NAME } );
 
-    # This hash maps nameserver IP addresses to arrayrefs of TXT resource
+    # This hash maps name server IP addresses to arrayrefs of TXT resource
     # record data matching the signature for SPF policies. These arrays
     # usually contain at most one string.
     my %ns_spf = ();

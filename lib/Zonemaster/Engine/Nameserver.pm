@@ -733,7 +733,7 @@ sub empty_cache {
 
 =head1 NAME
 
-Zonemaster::Engine::Nameserver - object representing a DNS nameserver
+Zonemaster::Engine::Nameserver - object representing a DNS name server
 
 =head1 SYNOPSIS
 
@@ -759,11 +759,11 @@ Class methods on this class allows saving and loading cache contents.
 
 =item name
 
-A L<Zonemaster::Engine::DNSName> object holding the nameserver's name.
+A L<Zonemaster::Engine::DNSName> object holding the name server's name.
 
 =item address
 
-A L<Net::IP::XS> object holding the nameserver's address.
+A L<Net::IP::XS> object holding the name server's address.
 
 =item dns
 
@@ -790,7 +790,7 @@ over IPv6.
 
 =item times
 
-A reference to a list with elapsed time values for the queries made through this nameserver.
+A reference to a list with elapsed time values for the queries made through this name server.
 
 =back
 
@@ -813,11 +813,11 @@ Replace the entire object cache with the contents of the named file.
 
 =item all_known_nameservers()
 
-Class method that returns a list of all nameserver objects in the global cache.
+Class method that returns a list of all name server objects in the global cache.
 
 =item empty_cache()
 
-Remove all cached nameserver objects and queries.
+Remove all cached name server objects and queries.
 
 =back
 
@@ -827,7 +827,7 @@ Remove all cached nameserver objects and queries.
 
 =item query($name, $type, $flagref)
 
-Send a DNS query to the nameserver the object represents. C<$name> and C<$type> are the name and type that will be queried for (C<$type> defaults
+Send a DNS query to the name server the object represents. C<$name> and C<$type> are the name and type that will be queried for (C<$type> defaults
 to 'A' if it's left undefined). C<$flagref> is a reference to a hash, the keys of which are flags and the values are their corresponding values.
 The available flags are as follows. All but 'class' and 'edns_details' directly correspond to methods in the L<Zonemaster::LDNS::Resolver> object.
 
@@ -936,7 +936,7 @@ Returns the standard deviation for the whole set of query times.
 
 =item add_fake_delegation($domain,$data)
 
-Adds fake delegation information to this specific nameserver object. Takes the
+Adds fake delegation information to this specific name server object. Takes the
 same arguments as the similarly named method in L<Zonemaster::Engine>. This is
 primarily used for internal information, and using it directly will likely give
 confusing results (but may be useful to model certain kinds of
@@ -944,12 +944,12 @@ misconfigurations).
 
 =item add_fake_ds($domain, $data)
 
-Adds fake DS information to this nameserver object. Takes the same arguments as
+Adds fake DS information to this name server object. Takes the same arguments as
 the similarly named method in L<Zonemaster::Engine>.
 
 =item axfr( $domain, $callback, $class )
 
-Does an AXFR for the requested domain from the nameserver. The callback
+Does an AXFR for the requested domain from the name server. The callback
 function will be called once for each received RR, with that RR as its only
 argument. To continue getting more RRs, the callback must return a true value.
 If it returns a true value, the AXFR will be aborted. See L<Zonemaster::LDNS::axfr>

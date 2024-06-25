@@ -273,7 +273,7 @@ Readonly my %TAG_DESCRIPTIONS => (
     },
     HAS_NAMESERVER_NO_WWW_A_TEST => sub {
         __x    # BASIC:HAS_NAMESERVER_NO_WWW_A_TEST
-          'Functional nameserver found. "A" query for www.{zname} test skipped.', @_;
+          'Functional name server found. "A" query for www.{zname} test skipped.', @_;
     },
     IPV4_DISABLED => sub {
         __x    # BASIC:IPV4_DISABLED

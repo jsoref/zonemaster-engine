@@ -39,7 +39,7 @@ ok( $p3 ne $p4,          'Same packet object not returned from other server' );
 ok( $p3 ne $p1,          'Same packet object not returned with other flag' );
 
 my $nscopy = Zonemaster::Engine->ns( 'ns.nic.se.', '2001:67c:124c:100a:0000::45' );
-ok( $nsv6 eq $nscopy, 'Same nameserver object returned' );
+ok( $nsv6 eq $nscopy, 'Same name server object returned' );
 my $nssame = Zonemaster::Engine->ns( 'foo.example.org', '2001:67c:124c:100a:0000::45' );
 ok(
     ( $nssame ne $nsv6 and $nssame->cache eq $nsv6->cache ),

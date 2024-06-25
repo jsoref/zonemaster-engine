@@ -338,7 +338,7 @@ Readonly my %TAG_DESCRIPTIONS => (
     },
     AAAA_WELL_PROCESSED => sub {
         __x    # NAMESERVER:AAAA_WELL_PROCESSED
-          'The following nameservers answer AAAA queries without problems : {ns_list}.', @_;
+          'The following name servers answer AAAA queries without problems : {ns_list}.', @_;
     },
     A_UNEXPECTED_RCODE => sub {
         __x    # NAMESERVER:A_UNEXPECTED_RCODE
@@ -350,7 +350,7 @@ Readonly my %TAG_DESCRIPTIONS => (
     },
     AXFR_FAILURE => sub {
         __x    # NAMESERVER:AXFR_FAILURE
-          'AXFR not available on nameserver {ns}.', @_;
+          'AXFR not available on name server {ns}.', @_;
     },
     BREAKS_ON_EDNS => sub {
         __x    # NAMESERVER:BREAKS_ON_EDNS
@@ -358,11 +358,11 @@ Readonly my %TAG_DESCRIPTIONS => (
     },
     CAN_BE_RESOLVED => sub {
         __x    # NAMESERVER:CAN_BE_RESOLVED
-          'All nameservers succeeded to resolve to an IP address.', @_;
+          'All name servers succeeded to resolve to an IP address.', @_;
     },
     CAN_NOT_BE_RESOLVED => sub {
         __x    # NAMESERVER:CAN_NOT_BE_RESOLVED
-          'The following nameservers failed to resolve to an IP address : {nsname_list}.', @_;
+          'The following name servers failed to resolve to an IP address : {nsname_list}.', @_;
     },
     CASE_QUERIES_RESULTS_DIFFER => sub {
         __x    # NAMESERVER:CASE_QUERIES_RESULTS_DIFFER
@@ -375,28 +375,28 @@ Readonly my %TAG_DESCRIPTIONS => (
     CASE_QUERY_DIFFERENT_ANSWER => sub {
         __x    # NAMESERVER:CASE_QUERY_DIFFERENT_ANSWER
           'When asked for {type} records on "{query1}" and "{query2}", '
-          . 'nameserver {ns} returns different answers.',
+          . 'name server {ns} returns different answers.',
           @_;
     },
     CASE_QUERY_DIFFERENT_RC => sub {
         __x    # NAMESERVER:CASE_QUERY_DIFFERENT_RC
           'When asked for {type} records on "{query1}" and "{query2}", '
-          . 'nameserver {ns} returns different RCODE ("{rcode1}" vs "{rcode2}").',
+          . 'name server {ns} returns different RCODE ("{rcode1}" vs "{rcode2}").',
           @_;
     },
     CASE_QUERY_NO_ANSWER => sub {
         __x    # NAMESERVER:CASE_QUERY_NO_ANSWER
-          'When asked for {type} records on "{domain}", nameserver {ns} returns nothing.', @_;
+          'When asked for {type} records on "{domain}", name server {ns} returns nothing.', @_;
     },
     CASE_QUERY_SAME_ANSWER => sub {
         __x    # NAMESERVER:CASE_QUERY_SAME_ANSWER
-          'When asked for {type} records on "{query1}" and "{query2}", nameserver {ns} returns same answers.',
+          'When asked for {type} records on "{query1}" and "{query2}", name server {ns} returns same answers.',
           @_;
     },
     CASE_QUERY_SAME_RC => sub {
         __x    # NAMESERVER:CASE_QUERY_SAME_RC
           'When asked for {type} records on "{query1}" and "{query2}", '
-          . 'nameserver {ns} returns same RCODE "{rcode}".',
+          . 'name server {ns} returns same RCODE "{rcode}".',
           @_;
     },
     DIFFERENT_SOURCE_IP => sub {
@@ -415,7 +415,7 @@ Readonly my %TAG_DESCRIPTIONS => (
     },
     EDNS0_SUPPORT => sub {
         __x    # NAMESERVER:EDNS0_SUPPORT
-          'The following nameservers support EDNS0 : {ns_list}.', @_;
+          'The following name servers support EDNS0 : {ns_list}.', @_;
     },
     IPV4_DISABLED => sub {
         __x    # NAMESERVER:IPV4_DISABLED
@@ -443,7 +443,7 @@ Readonly my %TAG_DESCRIPTIONS => (
     },
     NO_RESOLUTION => sub {
         __x    # NAMESERVER:NO_RESOLUTION
-          "No nameserver was successfully resolved to an IP address.", @_;
+          "No name server was successfully resolved to an IP address.", @_;
     },
     NO_RESPONSE => sub {
         __x    # NAMESERVER:NO_RESPONSE
@@ -451,23 +451,23 @@ Readonly my %TAG_DESCRIPTIONS => (
     },
     NO_UPWARD_REFERRAL => sub {
         __x    # NAMESERVER:NO_UPWARD_REFERRAL
-          'None of the following nameservers returns an upward referral : {nsname_list}.', @_;
+          'None of the following name servers returns an upward referral : {nsname_list}.', @_;
     },
     NS_ERROR => sub {
         __x    # NAMESERVER:NS_ERROR
-          'Erroneous response from nameserver {ns}.', @_;
+          'Erroneous response from name server {ns}.', @_;
     },
     N10_EDNS_RESPONSE_ERROR => sub {
         __x    # NAMESERVER:N10_EDNS_RESPONSE_ERROR
-          'Expected RCODE but received erroneous response to an EDNS version 1 query. Fetched from the nameservers with IP addresses {ns_ip_list}', @_;
+          'Expected RCODE but received erroneous response to an EDNS version 1 query. Fetched from the name servers with IP addresses {ns_ip_list}', @_;
     },
     N10_NO_RESPONSE_EDNS1_QUERY => sub {
         __x    # NAMESERVER:N10_NO_RESPONSE_EDNS1_QUERY
-          'No response to an EDNS version 1 query. Fetched from the nameservers with IP addresses {ns_ip_list}', @_;
+          'No response to an EDNS version 1 query. Fetched from the name servers with IP addresses {ns_ip_list}', @_;
     },
     N10_UNEXPECTED_RCODE => sub {
         __x    # NAMESERVER:N10_UNEXPECTED_RCODE
-          'Erroneous RCODE ("{rcode}") in response to an EDNS version 1 query. Fetched from the nameservers with IP addresses {ns_ip_list}', @_;
+          'Erroneous RCODE ("{rcode}") in response to an EDNS version 1 query. Fetched from the name servers with IP addresses {ns_ip_list}', @_;
     },
     N11_NO_EDNS => sub {
         __x    # NAMESERVER:N11_N11_NO_EDNS
@@ -519,7 +519,7 @@ Readonly my %TAG_DESCRIPTIONS => (
     },
     SAME_SOURCE_IP => sub {
         __x    # NAMESERVER:SAME_SOURCE_IP
-          'All nameservers reply with same IP used to query them.', @_;
+          'All name servers reply with same IP used to query them.', @_;
     },
     TEST_CASE_END => sub {
         __x    # NAMESERVER:TEST_CASE_END

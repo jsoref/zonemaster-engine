@@ -310,28 +310,28 @@ Readonly my %TAG_DESCRIPTIONS => (
     },
     IPV4_SAME_ASN => sub {
         __x    # CONNECTIVITY:IPV4_SAME_ASN
-          'All authoritative nameservers have their IPv4 addresses in the same AS set ({asn_list}).', @_;
+          'All authoritative name servers have their IPv4 addresses in the same AS set ({asn_list}).', @_;
     },
     IPV4_ONE_ASN => sub {
         __x    # CONNECTIVITY:IPV4_ONE_ASN
-          'All authoritative nameservers have their IPv4 addresses in the same AS ({asn}).', @_;
+          'All authoritative name servers have their IPv4 addresses in the same AS ({asn}).', @_;
     },
     IPV4_DIFFERENT_ASN => sub {
         __x    # CONNECTIVITY:IPV4_DIFFERENT_ASN
-          'At least two IPv4 addresses of the authoritative nameservers are announced by different AS sets. '
+          'At least two IPv4 addresses of the authoritative name servers are announced by different AS sets. '
           . 'A merged list of all AS: ({asn_list}).', @_;
     },
     IPV6_SAME_ASN => sub {
         __x    # CONNECTIVITY:IPV6_SAME_ASN
-          'All authoritative nameservers have their IPv6 addresses in the same AS set ({asn_list}).', @_;
+          'All authoritative name servers have their IPv6 addresses in the same AS set ({asn_list}).', @_;
     },
     IPV6_ONE_ASN => sub {
         __x    # CONNECTIVITY:IPV6_ONE_ASN
-          'All authoritative nameservers have their IPv6 addresses in the same AS ({asn}).', @_;
+          'All authoritative name servers have their IPv6 addresses in the same AS ({asn}).', @_;
     },
     IPV6_DIFFERENT_ASN => sub {
         __x    # CONNECTIVITY:IPV6_DIFFERENT_ASN
-          'At least two IPv6 addresses of the authoritative nameservers are announced by different AS sets. '
+          'At least two IPv6 addresses of the authoritative name servers are announced by different AS sets. '
           . 'A merged list of all AS: ({asn_list}).', @_;
     },
     IPV4_DISABLED => sub {

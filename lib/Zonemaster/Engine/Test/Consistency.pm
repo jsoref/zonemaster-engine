@@ -205,7 +205,7 @@ Readonly my %TAG_DESCRIPTIONS => (
     },
     EXTRA_ADDRESS_CHILD => sub {
         __x    # CONSISTENCY:EXTRA_ADDRESS_CHILD
-          'Child has extra nameserver IP address(es) not listed at parent ({ns_ip_list}).', @_;
+          'Child has extra name server IP address(es) not listed at parent ({ns_ip_list}).', @_;
     },
     IN_BAILIWICK_ADDR_MISMATCH => sub {
         __x    # CONSISTENCY:IN_BAILIWICK_ADDR_MISMATCH
@@ -247,15 +247,15 @@ Readonly my %TAG_DESCRIPTIONS => (
     },
     NO_RESPONSE_NS_QUERY => sub {
         __x    # CONSISTENCY:NO_RESPONSE_NS_QUERY
-          'No response from nameserver {ns} on NS queries.', @_;
+          'No response from name server {ns} on NS queries.', @_;
     },
     NO_RESPONSE_SOA_QUERY => sub {
         __x    # CONSISTENCY:NO_RESPONSE_SOA_QUERY
-          'No response from nameserver {ns} on SOA queries.', @_;
+          'No response from name server {ns} on SOA queries.', @_;
     },
     NS_SET => sub {
         __x    # CONSISTENCY:NS_SET
-          'Saw NS set ({nsname_list}) on following nameserver set : {servers}.', @_;
+          'Saw NS set ({nsname_list}) on following name server set : {servers}.', @_;
     },
     ONE_NS_SET => sub {
         __x    # CONSISTENCY:ONE_NS_SET
@@ -287,11 +287,11 @@ Readonly my %TAG_DESCRIPTIONS => (
     },
     SOA_RNAME => sub {
         __x    # CONSISTENCY:SOA_RNAME
-          "Found SOA rname {rname} on following nameserver set : {ns_list}.", @_;
+          "Found SOA rname {rname} on following name server set : {ns_list}.", @_;
     },
     SOA_SERIAL => sub {
         __x    # CONSISTENCY:SOA_SERIAL
-          'Saw SOA serial number {serial} on following nameserver set : {ns_list}.', @_;
+          'Saw SOA serial number {serial} on following name server set : {ns_list}.', @_;
     },
     SOA_SERIAL_VARIATION => sub {
         __x    # CONSISTENCY:SOA_SERIAL_VARIATION
@@ -301,7 +301,7 @@ Readonly my %TAG_DESCRIPTIONS => (
     SOA_TIME_PARAMETER_SET => sub {
         __x    # CONSISTENCY:SOA_TIME_PARAMETER_SET
           'Saw SOA time parameter set (REFRESH={refresh}, RETRY={retry}, EXPIRE={expire}, '
-          . 'MINIMUM={minimum}) on following nameserver set : {ns_list}.', @_;
+          . 'MINIMUM={minimum}) on following name server set : {ns_list}.', @_;
     },
     TEST_CASE_END => sub {
         __x    # CONSISTENCY:TEST_CASE_END

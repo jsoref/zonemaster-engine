@@ -275,7 +275,7 @@ Readonly my %TAG_DESCRIPTIONS => (
     },
     NAMESERVER_NON_ALLOWED_CHARS => sub {
         __x    # SYNTAX:NAMESERVER_NON_ALLOWED_CHARS
-          'Found illegal characters in the nameserver ({domain}).', @_;
+          'Found illegal characters in the name server ({domain}).', @_;
     },
     NAMESERVER_NUMERIC_TLD => sub {
         __x    # SYNTAX:NAMESERVER_NUMERIC_TLD
@@ -305,11 +305,11 @@ Readonly my %TAG_DESCRIPTIONS => (
     },
     NO_RESPONSE_MX_QUERY => sub {
         __x    # SYNTAX:NO_RESPONSE_MX_QUERY
-          'No response from nameserver(s) on MX queries.', @_;
+          'No response from name server(s) on MX queries.', @_;
     },
     NO_RESPONSE_SOA_QUERY => sub {
         __x    # SYNTAX:NO_RESPONSE_SOA_QUERY
-          'No response from nameserver(s) on SOA queries.', @_;
+          'No response from name server(s) on SOA queries.', @_;
     },
     ONLY_ALLOWED_CHARS => sub {
         __x    # SYNTAX:ONLY_ALLOWED_CHARS

@@ -327,8 +327,8 @@ look for that if you recurse up the tree).
 =item ns_names
 
 A reference to an array of L<Zonemaster::Engine::DNSName> objects, holding the
-names of the nameservers for the domain, as returned by the first
-responding nameserver in the glue list.
+names of the name servers for the domain, as returned by the first
+responding name server in the glue list.
 
 =item ns
 
@@ -338,13 +338,13 @@ looking up addresses for the names. One element will be added to this
 list for each unique name/IP pair. Names for which no addresses could
 be found will not be in this list. The list is lazy-loading, so take
 care to only look at as many entries as you really need. There are
-zones with more than 20 nameserver, and looking up the addresses of
+zones with more than 20 name servers, and looking up the addresses of
 them all can take som considerable time.
 
 =item glue_names
 
-A reference to a an array of L<Zonemaster::Engine::DNSName> objects, holding the names
-of this zones nameservers as listed at the first responding nameserver of the
+A reference to an array of L<Zonemaster::Engine::DNSName> objects, holding the names
+of this zone's name servers as listed at the first responding name server of the
 parent zone.
 
 =item glue
@@ -363,7 +363,7 @@ found recursively.
 =item glue_addresses
 
 A list of L<Zonemaster::LDNS::RR::A> and L<Zonemaster::LDNS::RR::AAAA> records returned in
-the Additional section of an NS query to the first listed nameserver for the
+the Additional section of an NS query to the first listed name server for the
 parent domain.
 
 =back
@@ -374,7 +374,7 @@ parent domain.
 
 =item query_one($name[, $type[, $flags]])
 
-Sends (or retrieves from cache) a query for the given name, type and flags sent to the first nameserver in the zone's ns list. If there is a
+Sends (or retrieves from cache) a query for the given name, type and flags sent to the first name server in the zone's ns list. If there is a
 response, it will be returned in a L<Zonemaster::Engine::Packet> object. If the type arguments is not given, it defaults to 'A'. If the flags are not given, they default to C<class> IN and C<dnssec>, C<usevc> and C<recurse> according to configuration (which is by default off on all three).
 
 =item query_persistent($name[, $type[, $flags]])
@@ -390,7 +390,7 @@ first server that returns one, it returns the first packet that has the AA flag 
 
 =item query_all($name, $type, $flags)
 
-Sends (or retrieves from cache) queries to all the nameservers listed in the zone's ns list, and returns a reference to an array with the
+Sends (or retrieves from cache) queries to all the name servers listed in the zone's ns list, and returns a reference to an array with the
 responses. The responses can be either L<Zonemaster::Engine::Packet> objects or C<undef> values. The arguments are the same as for L<query_one>.
 
 =item is_in_zone($name)

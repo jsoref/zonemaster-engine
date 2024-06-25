@@ -186,7 +186,7 @@ Returns true if the packet represents a non-existent DNS node.
 
 =item is_redirect
 
-Returns true if the packet is a redirect to another set of nameservers.
+Returns true if the packet is a redirect to another set of name servers.
 
 =item get_records($type[, @section])
 

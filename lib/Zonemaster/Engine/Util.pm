@@ -204,7 +204,7 @@ is also added to the global logger object's list of entries.
 
 =item ns($name, $address)
 
-Creates and returns a nameserver object with the given name and address.
+Creates and returns a name server object with the given name and address.
 
 =item name($string_name_or_zone)
 

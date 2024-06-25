@@ -321,12 +321,12 @@ Returns a list of the loaded test modules. Exactly the same as L<Zonemaster::Eng
 This method adds some fake delegation information to the system.
 
 The arguments are a domain name, and a hashref with delegation information.
-The keys in the hash are nameserver names, and the values are arrayrefs of IP
-addresses for their corresponding nameserver.
+The keys in the hash are name server names, and the values are arrayrefs of IP
+addresses for their corresponding name server.
 Alternatively the IP addresses may be specified as an `undef` which is handled
 the same as an empty arrayref.
 
-For each provided nameserver with an empty list of addresses, either a
+For each provided name server with an empty list of addresses, either a
 C<FAKE_DELEGATION_NO_IP> or a C<FAKE_DELEGATION_IN_ZONE_NO_IP> message is
 emitted.
 
@@ -334,7 +334,7 @@ The only recognized flag is C<fill_in_empty_oob_glue>.
 This flag is boolean and defaults to true.
 If this flag is true, this method updates the given C<$data> by looking up and
 filling in some glue addresses.
-Specifically the glue addresses for any nameserver name that are
+Specifically the glue addresses for any name server name that are
 out-of-bailiwick of the given C<$domain> and that comes with an empty list of
 addresses.
 
@@ -403,7 +403,7 @@ Set the logger's start time to the current time.
 =item reset()
 
 Reset logger start time to current time, empty the list of log messages, clear
-nameserver object cache and recursor cache.
+name server object cache and recursor cache.
 
 =back
 

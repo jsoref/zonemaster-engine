@@ -34,7 +34,7 @@ sub zone_gives_not {
     return scalar( @res );
 }
 
-my $datafile = q{t/Test-nameserver.data};
+my $datafile = q{t/Test-name-server.data};
 if ( not $ENV{ZONEMASTER_RECORD} ) {
     die q{Stored data file missing} if not -r $datafile;
     Zonemaster::Engine::Nameserver->restore( $datafile );
@@ -50,7 +50,7 @@ foreach my $testcase ( qw{nameserver01 nameserver02 nameserver03 nameserver04 na
     Zonemaster::Engine::Profile->effective->merge( $profile_test );
     my %testcases;
     Zonemaster::Engine->logger->clear_history();
-    foreach my $result ( Zonemaster::Engine->test_module( q{nameserver}, q{afnic.fr} ) ) {
+    foreach my $result ( Zonemaster::Engine->test_module( q{name-server}, q{afnic.fr} ) ) {
         if ( $result->testcase && $result->testcase ne 'Unspecified' ) {
             $testcases{$result->testcase} = 1;
         }
@@ -58,7 +58,7 @@ foreach my $testcase ( qw{nameserver01 nameserver02 nameserver03 nameserver04 na
     eq_or_diff( [ map { lc $_ } keys %testcases ], [ $testcase ], 'expected test-case ('. $testcase .')' );
 }
 
-$json         = read_file( 't/profiles/Test-nameserver-all.json' );
+$json         = read_file( 't/profiles/Test-name-server-all.json' );
 $profile_test = Zonemaster::Engine::Profile->from_json( $json );
 Zonemaster::Engine::Profile->effective->merge( $profile_test );
 

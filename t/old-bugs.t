@@ -40,7 +40,7 @@ my @res = Zonemaster::Engine->test_method( 'Syntax', 'syntax03', Zonemaster::Eng
 is( $res[3]->tag, q{NO_DOUBLE_DASH}, 'No complaint for XN--MGBERP4A5D4AR' );
 
 my $zft_zone = Zonemaster::Engine->zone( 'zft.rd.nic.fr' );
-is( scalar( @{ $zft_zone->ns } ), 2, 'Two nameservers for zft.rd.nic.fr.' );
+is( scalar( @{ $zft_zone->ns } ), 2, 'Two name servers for zft.rd.nic.fr.' );
 
 TODO: {
     local $TODO = 'The root zone fails delegation03. We need to investigate whether this is correct.';
