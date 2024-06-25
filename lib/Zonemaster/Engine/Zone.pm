@@ -338,7 +338,7 @@ looking up addresses for the names. One element will be added to this
 list for each unique name/IP pair. Names for which no addresses could
 be found will not be in this list. The list is lazy-loading, so take
 care to only look at as many entries as you really need. There are
-zones with more than 20 nameserver, and looking up the addresses of
+zones with more than 20 nameservers, and looking up the addresses of
 them all can take som considerable time.
 
 =item glue_names
