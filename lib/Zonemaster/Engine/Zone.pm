@@ -343,7 +343,7 @@ them all can take som considerable time.
 
 =item glue_names
 
-A reference to a an array of L<Zonemaster::Engine::DNSName> objects, holding the names
+A reference to an array of L<Zonemaster::Engine::DNSName> objects, holding the names
 of this zones nameservers as listed at the first responding nameserver of the
 parent zone.
 
