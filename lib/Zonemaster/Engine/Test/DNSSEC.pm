@@ -727,14 +727,14 @@ Readonly my %TAG_DESCRIPTIONS => (
         __x    # DNSSEC:DS01_DIGEST_NOT_SUPPORTED_BY_ZM
           'DS record for zone {domain} with keytag {keytag} was created by digest algorithm {ds_algo_num} '
           . '({ds_algo_mnemo}) which cannot be validated by this installation of Zonemaster. '
-          . 'Fetched from the nameservers with IP addresses "{ns_ip_list}".',
+          . 'Fetched from the name servers with IP addresses "{ns_ip_list}".',
           @_;
     },
     DS01_DS_ALGO_DEPRECATED => sub {
         __x    # DNSSEC:DS01_DS_ALGO_DEPRECATED
           'DS record for zone {domain} with keytag {keytag} was created by digest algorithm {ds_algo_num} '
           . '({ds_algo_mnemo}) which is deprecated. '
-          . 'Fetched from the nameservers with IP addresses "{ns_ip_list}".',
+          . 'Fetched from the name servers with IP addresses "{ns_ip_list}".',
           @_;
     },
     DS01_DS_ALGO_2_MISSING => sub {
@@ -746,73 +746,73 @@ Readonly my %TAG_DESCRIPTIONS => (
         __x    # DNSSEC:DS01_DS_ALGO_NOT_DS
           'DS record for zone {domain} with keytag {keytag} was created by digest algorithm {ds_algo_num} '
           . '({ds_algo_mnemo}) which is not meant for DS. '
-          . 'Fetched from the nameservers with IP addresses "{ns_ip_list}".',
+          . 'Fetched from the name servers with IP addresses "{ns_ip_list}".',
           @_;
     },
     DS01_DS_ALGO_RESERVED => sub {
         __x    # DNSSEC:DS01_DS_ALGO_RESERVED
           'DS record for zone {domain} with keytag {keytag} was created with an unassigned digest algorithm '
           . '(algorithm number {ds_algo_num}). '
-          . 'Fetched from the nameservers with IP addresses "{ns_ip_list}".',
+          . 'Fetched from the name servers with IP addresses "{ns_ip_list}".',
           @_;
     },
     DS02_ALGO_NOT_SUPPORTED_BY_ZM => sub {
         __x    # DNSSEC:DS02_ALGO_NOT_SUPPORTED_BY_ZM
           'DNSKEY with tag {keytag} uses unsupported algorithm {algo_num} '
           . '({algo_mnemo}) by this installation of Zonemaster. Fetched from '
-          . 'the nameservers with IP addresses "{ns_ip_list}".',
+          . 'the name servers with IP addresses "{ns_ip_list}".',
           @_;
     },
     DS02_DNSKEY_NOT_FOR_ZONE_SIGNING => sub {
         __x    # DNSSEC:DS02_DNSKEY_NOT_FOR_ZONE_SIGNING
           'Flags field of DNSKEY record with tag {keytag} has not ZONE bit set '
           . 'although DS with same tag is present in parent. Fetched from '
-          . 'the nameservers with IP addresses "{ns_ip_list}".',
+          . 'the name servers with IP addresses "{ns_ip_list}".',
           @_;
     },
     DS02_DNSKEY_NOT_SEP => sub {
         __x    # DNSSEC:DS02_DNSKEY_NOT_SEP
           'Flags field of DNSKEY record with tag {keytag} has not SEP bit set '
           . 'although DS with same tag is present in parent. Fetched from '
-          . 'the nameservers with IP addresses "{ns_ip_list}".',
+          . 'the name servers with IP addresses "{ns_ip_list}".',
           @_;
     },
     DS02_DNSKEY_NOT_SIGNED_BY_ANY_DS => sub {
         __x    # DNSSEC:DS02_DNSKEY_NOT_SIGNED_BY_ANY_DS
           'The DNSKEY RRset has not been signed by any DNSKEY matched by a DS record. '
-          . 'Fetched from the nameservers with IP addresses "{ns_ip_list}".',
+          . 'Fetched from the name servers with IP addresses "{ns_ip_list}".',
           @_;
     },
     DS02_NO_DNSKEY_FOR_DS => sub {
         __x    # DNSSEC:DS02_NO_DNSKEY_FOR_DS
           'The DNSKEY record with tag {keytag} that the DS refers to does not '
-          . 'exist in the DNSKEY RRset. Fetched from the nameservers with IP '
+          . 'exist in the DNSKEY RRset. Fetched from the name servers with IP '
           . '"{ns_ip_list}".',
           @_;
     },
     DS02_NO_MATCHING_DNSKEY_RRSIG => sub {
         __x    # DNSSEC:DS02_NO_MATCHING_DNSKEY_RRSIG
           'The DNSKEY RRset is not signed by the DNSKEY with tag {keytag} that '
-          . 'the DS record refers to. Fetched from the nameservers with IP '
+          . 'the DS record refers to. Fetched from the name servers with IP '
           . '"{ns_ip_list}".',
           @_;
     },
     DS02_NO_MATCH_DS_DNSKEY => sub {
         __x    # DNSSEC:DS02_NO_MATCH_DS_DNSKEY
           'The DS record does not match the DNSKEY with tag {keytag} by algorithm '
-          . 'or digest. Fetched from the nameservers with IP "{ns_ip_list}".',
+          . 'or digest. Fetched from the name servers with IP "{ns_ip_list}".',
           @_;
     },
     DS02_NO_VALID_DNSKEY_FOR_ANY_DS => sub {
         __x    # DNSSEC:DS02_NO_VALID_DNSKEY_FOR_ANY_DS
           'There is no valid DNSKEY matched by any of the DS records. '
-          . 'Fetched from the nameservers with IP addresses "{ns_ip_list}".',
+          . 'Fetched from the name servers with IP addresses "{ns_ip_list}".',
           @_;
     },
     DS02_RRSIG_NOT_VALID_BY_DNSKEY => sub {
         __x    # DNSSEC:DS02_RRSIG_NOT_VALID_BY_DNSKEY
           'The DNSKEY RRset is signed with an RRSIG with tag {keytag} which cannot '
-          . 'be validated by the matching DNSKEY. Fetched from the nameservers with IP '
+          . 'be validated by the matching DNSKEY. Fetched from the name servers with IP '
           . 'addresses "{ns_ip_list}".',
           @_;
     },
@@ -937,38 +937,38 @@ Readonly my %TAG_DESCRIPTIONS => (
         __x    # DNSSEC:DS08_ALGO_NOT_SUPPORTED_BY_ZM
           'DNSKEY with tag {keytag} uses unsupported algorithm {algo_num} '
           . '({algo_mnemo}) by this installation of Zonemaster. Fetched from '
-          . 'the nameservers with IP addresses "{ns_ip_list}".',
+          . 'the name servers with IP addresses "{ns_ip_list}".',
           @_;
     },
     DS08_DNSKEY_RRSIG_EXPIRED => sub {
         __x    # DNSSEC:DS08_DNSKEY_RRSIG_EXPIRED
           'RRSIG with keytag {keytag} and covering type DNSKEY has already expired. '
-          . 'Fetched from the nameservers with IP addresses "{ns_ip_list}".',
+          . 'Fetched from the name servers with IP addresses "{ns_ip_list}".',
           @_;
     },
     DS08_DNSKEY_RRSIG_NOT_YET_VALID => sub {
         __x    # DNSSEC:DS08_DNSKEY_RRSIG_NOT_YET_VALID
           'RRSIG with keytag {keytag} and covering type DNSKEY has inception date in '
-          . 'the future. Fetched from the nameservers with IP addresses "{ns_ip_list}".',
+          . 'the future. Fetched from the name servers with IP addresses "{ns_ip_list}".',
           @_;
     },
     DS08_MISSING_RRSIG_IN_RESPONSE => sub {
         __x    # DNSSEC:DS08_MISSING_RRSIG_IN_RESPONSE
           'The DNSKEY RRset is not signed, which is against expectation. Fetched '
-          . 'from the nameservers with IP addresses "{ns_ip_list}".',
+          . 'from the name servers with IP addresses "{ns_ip_list}".',
           @_;
     },
     DS08_NO_MATCHING_DNSKEY => sub {
         __x    # DNSSEC:DS08_NO_MATCHING_DNSKEY
           'The DNSKEY RRset is signed with an RRSIG with tag {keytag} which does '
-          . 'not match any DNSKEY record. Fetched from the nameservers with IP '
+          . 'not match any DNSKEY record. Fetched from the name servers with IP '
           . 'addresses "{ns_ip_list}".',
           @_;
     },
     DS08_RRSIG_NOT_VALID_BY_DNSKEY => sub {
         __x    # DNSSEC:DS08_RRSIG_NOT_VALID_BY_DNSKEY
           'The DNSKEY RRset is signed with an RRSIG with tag {keytag} which cannot '
-          . 'be validated by the matching DNSKEY. Fetched from the nameservers with IP '
+          . 'be validated by the matching DNSKEY. Fetched from the name servers with IP '
           . 'addresses "{ns_ip_list}".',
           @_;
     },
@@ -976,39 +976,39 @@ Readonly my %TAG_DESCRIPTIONS => (
         __x    # DNSSEC:DS09_ALGO_NOT_SUPPORTED_BY_ZM
           'DNSKEY with tag {keytag} uses unsupported algorithm {algo_num} '
           . '({algo_mnemo}) by this installation of Zonemaster. Fetched from '
-          . 'the nameservers with IP addresses "{ns_ip_list}".',
+          . 'the name servers with IP addresses "{ns_ip_list}".',
           @_;
     },
     DS09_MISSING_RRSIG_IN_RESPONSE => sub {
         __x    # DNSSEC:DS09_MISSING_RRSIG_IN_RESPONSE
           'The SOA RRset is not signed, which is against expectation. Fetched '
-          . 'from the nameservers with IP addresses "{ns_ip_list}".',
+          . 'from the name servers with IP addresses "{ns_ip_list}".',
           @_;
     },
     DS09_NO_MATCHING_DNSKEY => sub {
         __x    # DNSSEC:DS09_NO_MATCHING_DNSKEY
           'The SOA RRset is signed with an RRSIG with tag {keytag} which does '
-          . 'not match any DNSKEY record. Fetched from the nameservers with IP '
+          . 'not match any DNSKEY record. Fetched from the name servers with IP '
           . 'addresses "{ns_ip_list}".',
           @_;
     },
     DS09_RRSIG_NOT_VALID_BY_DNSKEY => sub {
         __x    # DNSSEC:DS09_RRSIG_NOT_VALID_BY_DNSKEY
           'The SOA RRset is signed with an RRSIG with tag {keytag} which cannot '
-          . 'be validated by the matching DNSKEY. Fetched from the nameservers with IP '
+          . 'be validated by the matching DNSKEY. Fetched from the name servers with IP '
           . 'addresses "{ns_ip_list}".',
           @_;
     },
     DS09_SOA_RRSIG_EXPIRED => sub {
         __x    # DNSSEC:DS09_SOA_RRSIG_EXPIRED
           'RRSIG with keytag {keytag} and covering type SOA has already expired. '
-          . 'Fetched from the nameservers with IP addresses "{ns_ip_list}".',
+          . 'Fetched from the name servers with IP addresses "{ns_ip_list}".',
           @_;
     },
     DS09_SOA_RRSIG_NOT_YET_VALID => sub {
         __x    # DNSSEC:DS09_SOA_RRSIG_NOT_YET_VALID
           'RRSIG with keytag {keytag} and covering type SOA has inception date in '
-          . 'the future. Fetched from the nameservers with IP addresses "{ns_ip_list}".',
+          . 'the future. Fetched from the name servers with IP addresses "{ns_ip_list}".',
           @_;
     },
     DS10_ALGO_NOT_SUPPORTED_BY_ZM => sub {
@@ -1259,25 +1259,25 @@ Readonly my %TAG_DESCRIPTIONS => (
     },
     DS11_PARENT_WITHOUT_DS => sub {
         __x    # DNSSEC:DS11_PARENT_WITHOUT_DS
-          'No DS record for the child zone found on parent nameservers with IP '
+          'No DS record for the child zone found on parent name servers with IP '
           . 'addresses "{ns_ip_list}".',
           @_;
     },
     DS11_PARENT_WITH_DS => sub {
         __x    # DNSSEC:DS11_PARENT_WITH_DS
-          'DS record for the child zone found on parent nameservers with IP addresses '
+          'DS record for the child zone found on parent name servers with IP addresses '
           . '"{ns_ip_list}".',
           @_;
     },
     DS11_NS_WITH_SIGNED_ZONE => sub {
         __x    # DNSSEC:DS11_NS_WITH_SIGNED_ZONE
-          'Signed child zone found on nameservers with IP addresses '
+          'Signed child zone found on name servers with IP addresses '
           . '"{ns_ip_list}".',
           @_;
     },
     DS11_NS_WITH_UNSIGNED_ZONE => sub {
         __x    # DNSSEC:DS11_NS_WITH_UNSIGNED_ZONE
-          'Unsigned child zone found on nameservers with IP addresses '
+          'Unsigned child zone found on name servers with IP addresses '
           . '"{ns_ip_list}".',
           @_;
     },
@@ -1289,39 +1289,39 @@ Readonly my %TAG_DESCRIPTIONS => (
     DS13_ALGO_NOT_SIGNED_DNSKEY => sub {
         __x    # DNSSEC:DS13_ALGO_NOT_SIGNED_DNSKEY
           'The DNSKEY RRset is not signed by algorithm {algo_num} ({algo_mnemo}) '
-          . 'present in the DNSKEY RRset. Fetched from the nameservers with IP '
+          . 'present in the DNSKEY RRset. Fetched from the name servers with IP '
           . 'addresses "{ns_ip_list}".',
           @_;
     },
     DS13_ALGO_NOT_SIGNED_NS => sub {
         __x    # DNSSEC:DS13_ALGO_NOT_SIGNED_NS
           'The NS RRset is not signed by algorithm {algo_num} ({algo_mnemo}) '
-          . 'present in the DNSKEY RRset. Fetched from the nameservers with IP '
+          . 'present in the DNSKEY RRset. Fetched from the name servers with IP '
           . 'addresses "{ns_ip_list}".',
           @_;
     },
     DS13_ALGO_NOT_SIGNED_SOA => sub {
         __x    # DNSSEC:DS13_ALGO_NOT_SIGNED_SOA
           'The SOA RRset is not signed by algorithm {algo_num} ({algo_mnemo}) '
-          . 'present in the DNSKEY RRset. Fetched from the nameservers with IP '
+          . 'present in the DNSKEY RRset. Fetched from the name servers with IP '
           . 'addresses "{ns_ip_list}".',
           @_;
     },
     DS15_HAS_CDNSKEY_NO_CDS => sub {
         __x    # DNSSEC:DS15_HAS_CDNSKEY_NO_CDS
-          'CDNSKEY RRset is found on nameservers that resolve to IP addresses '
+          'CDNSKEY RRset is found on name servers that resolve to IP addresses '
           . '({ns_ip_list}), but no CDS RRset.',
           @_;
     },
     DS15_HAS_CDS_AND_CDNSKEY => sub {
         __x    # DNSSEC:DS15_HAS_CDS_AND_CDNSKEY
-          'CDNSKEY and CDS RRsets are found on nameservers that resolve to IP addresses '
+          'CDNSKEY and CDS RRsets are found on name servers that resolve to IP addresses '
           . '({ns_ip_list}).',
           @_;
     },
     DS15_HAS_CDS_NO_CDNSKEY => sub {
         __x    # DNSSEC:DS15_HAS_CDS_NO_CDNSKEY
-          'CDS RRset is found on nameservers that resolve to IP addresses '
+          'CDS RRset is found on name servers that resolve to IP addresses '
           . '({ns_ip_list}), but no CDNSKEY RRset.',
           @_;
     },
@@ -1335,7 +1335,7 @@ Readonly my %TAG_DESCRIPTIONS => (
     },
     DS15_MISMATCH_CDS_CDNSKEY => sub {
         __x    # DNSSEC:DS15_MISMATCH_CDS_CDNSKEY
-          'Both CDS and CDNSKEY RRsets are found on nameservers that resolve to IP '
+          'Both CDS and CDNSKEY RRsets are found on name servers that resolve to IP '
           . 'addresses ({ns_ip_list}) but they do not match.',
           @_;
     },
@@ -1346,151 +1346,151 @@ Readonly my %TAG_DESCRIPTIONS => (
     DS16_CDS_INVALID_RRSIG => sub {
         __x    # DNSSEC:DS16_CDS_INVALID_RRSIG
           'The CDS RRset is signed with an RRSIG with tag {keytag}, but the RRSIG does '
-          . 'not match the DNSKEY with the same key tag. Fetched from the nameservers '
+          . 'not match the DNSKEY with the same key tag. Fetched from the name servers '
           . 'with IP addresses "{ns_ip_list}".',
           @_;
     },
     DS16_CDS_MATCHES_NON_SEP_DNSKEY => sub {
         __x    # DNSSEC:DS16_CDS_MATCHES_NON_SEP_DNSKEY
           'The CDS record with tag {keytag} matches a DNSKEY record with SEP bit (bit 15) '
-          . 'unset. Fetched from the nameservers with IP addresses "{ns_ip_list}".',
+          . 'unset. Fetched from the name servers with IP addresses "{ns_ip_list}".',
           @_;
     },
     DS16_CDS_MATCHES_NON_ZONE_DNSKEY => sub {
         __x    # DNSSEC:DS16_CDS_MATCHES_NON_ZONE_DNSKEY
           'The CDS record with tag {keytag} matches a DNSKEY record with zone bit (bit 7) '
-          . 'unset. Fetched from the nameservers with IP addresses "{ns_ip_list}".',
+          . 'unset. Fetched from the name servers with IP addresses "{ns_ip_list}".',
           @_;
     },
     DS16_CDS_MATCHES_NO_DNSKEY => sub {
         __x    # DNSSEC:DS16_CDS_MATCHES_NO_DNSKEY
           'The CDS record with tag {keytag} does not match any DNSKEY record. Fetched '
-          . 'from the nameservers with IP addresses "{ns_ip_list}".',
+          . 'from the name servers with IP addresses "{ns_ip_list}".',
           @_;
     },
     DS16_CDS_NOT_SIGNED_BY_CDS => sub {
         __x    # DNSSEC:DS16_CDS_NOT_SIGNED_BY_CDS
           'The CDS RRset is not signed by the DNSKEY that the CDS record with tag '
-          . '{keytag} points to. Fetched from the nameservers with IP addresses '
+          . '{keytag} points to. Fetched from the name servers with IP addresses '
           . '"{ns_ip_list}".',
           @_;
     },
     DS16_CDS_SIGNED_BY_UNKNOWN_DNSKEY => sub {
         __x    # DNSSEC:DS16_CDS_SIGNED_BY_UNKNOWN_DNSKEY
           'The CDS RRset is signed by RRSIG with tag {keytag} but that is not in the '
-          . 'DNSKEY RRset. Fetched from the nameservers with P addresses "{ns_ip_list}".',
+          . 'DNSKEY RRset. Fetched from the name servers with P addresses "{ns_ip_list}".',
           @_;
     },
     DS16_CDS_UNSIGNED => sub {
         __x    # DNSSEC:DS16_CDS_UNSIGNED
-          'The CDS RRset is not signed. Fetched from the nameservers with IP addresses '
+          'The CDS RRset is not signed. Fetched from the name servers with IP addresses '
           . '"{ns_ip_list}".',
           @_;
     },
     DS16_CDS_WITHOUT_DNSKEY => sub {
         __x    # DNSSEC:DS16_CDS_WITHOUT_DNSKEY
           'A CDS RRset exists, but no DNSKEY record exists. Fetched from the '
-          . 'nameservers with IP addresses "{ns_ip_list}".',
+          . 'name servers with IP addresses "{ns_ip_list}".',
           @_;
     },
     DS16_DELETE_CDS => sub {
         __x    # DNSSEC:DS16_DELETE_CDS
-          'A single "delete" CDS record is found on the nameservers with IP addresses '
+          'A single "delete" CDS record is found on the name servers with IP addresses '
           . '"{ns_ip_list}".',
           @_;
     },
     DS16_DNSKEY_NOT_SIGNED_BY_CDS => sub {
         __x    # DNSSEC:DS16_DNSKEY_NOT_SIGNED_BY_CDS
           'The DNSKEY RRset is not signed by the DNSKEY that the CDS record with tag '
-          . '{keytag} points to. Fetched from the nameservers with IP addresses '
+          . '{keytag} points to. Fetched from the name servers with IP addresses '
           . '"{ns_ip_list}".',
           @_;
     },
     DS16_MIXED_DELETE_CDS => sub {
         __x    # DNSSEC:DS16_MIXED_DELETE_CDS
           'The CDS RRset is a mixture between "delete" record and other records. '
-          . 'Fetched from the nameservers with IP addresses "{ns_ip_list}".',
+          . 'Fetched from the name servers with IP addresses "{ns_ip_list}".',
           @_;
     },
     DS17_CDNSKEY_INVALID_RRSIG => sub {
         __x    # DNSSEC:DS17_CDNSKEY_INVALID_RRSIG
           'The CDNSKEY RRset is signed with an RRSIG with tag {keytag}, but the RRSIG does '
-          . 'not match the DNSKEY with the same key tag. Fetched from the nameservers '
+          . 'not match the DNSKEY with the same key tag. Fetched from the name servers '
           . 'with IP addresses "{ns_ip_list}".',
           @_;
     },
     DS17_CDNSKEY_IS_NON_SEP => sub {
         __x    # DNSSEC:DS17_CDNSKEY_IS_NON_SEP
           'The CDNSKEY record with tag {keytag} has the SEP bit (bit 15) unset. Fetched '
-          . 'from the nameservers with IP addresses "{ns_ip_list}".',
+          . 'from the name servers with IP addresses "{ns_ip_list}".',
           @_;
     },
     DS17_CDNSKEY_IS_NON_ZONE => sub {
         __x    # DNSSEC:DS17_CDNSKEY_IS_NON_ZONE
           'The CDNSKEY record with tag {keytag} has the zone bit (bit 7) unset. Fetched '
-          . 'from the nameservers with IP addresses "{ns_ip_list}".',
+          . 'from the name servers with IP addresses "{ns_ip_list}".',
           @_;
     },
     DS17_CDNSKEY_MATCHES_NO_DNSKEY => sub {
         __x    # DNSSEC:DS17_CDNSKEY_MATCHES_NO_DNSKEY
           'The CDNSKEY record with tag {keytag} does not match any DNSKEY record. Fetched '
-          . 'from the nameservers with IP addresses "{ns_ip_list}".',
+          . 'from the name servers with IP addresses "{ns_ip_list}".',
           @_;
     },
     DS17_CDNSKEY_NOT_SIGNED_BY_CDNSKEY => sub {
         __x    # DNSSEC:DS17_CDNSKEY_NOT_SIGNED_BY_CDNSKEY
           'The CDNSKEY RRset is not signed by the DNSKEY that the CDNSKEY record with tag '
-          . '{keytag} points to. Fetched from the nameservers with IP addresses '
+          . '{keytag} points to. Fetched from the name servers with IP addresses '
           . '"{ns_ip_list}".',
           @_;
     },
     DS17_CDNSKEY_SIGNED_BY_UNKNOWN_DNSKEY => sub {
         __x    # DNSSEC:DS17_CDNSKEY_SIGNED_BY_UNKNOWN_DNSKEY
           'The CDNSKEY RRset is signed by RRSIG with tag {keytag} but that is not in the '
-          . 'DNSKEY RRset. Fetched from the nameservers with P addresses "{ns_ip_list}".',
+          . 'DNSKEY RRset. Fetched from the name servers with P addresses "{ns_ip_list}".',
           @_;
     },
     DS17_CDNSKEY_UNSIGNED => sub {
         __x    # DNSSEC:DS17_CDNSKEY_UNSIGNED
-          'The CDNSKEY RRset is not signed. Fetched from the nameservers with IP addresses '
+          'The CDNSKEY RRset is not signed. Fetched from the name servers with IP addresses '
           . '"{ns_ip_list}".',
           @_;
     },
     DS17_CDNSKEY_WITHOUT_DNSKEY => sub {
         __x    # DNSSEC:DS17_CDNSKEY_WITHOUT_DNSKEY
           'A CDNSKEY RRset exists, but no DNSKEY record exists. Fetched from the '
-          . 'nameservers with IP addresses "{ns_ip_list}".',
+          . 'name servers with IP addresses "{ns_ip_list}".',
           @_;
     },
     DS17_DELETE_CDNSKEY => sub {
         __x    # DNSSEC:DS17_DELETE_CDNSKEY
-          'A single "delete" CDNSKEY record is found on the nameservers with IP addresses '
+          'A single "delete" CDNSKEY record is found on the name servers with IP addresses '
           . '"{ns_ip_list}".',
           @_;
     },
     DS17_DNSKEY_NOT_SIGNED_BY_CDNSKEY => sub {
         __x    # DNSSEC:DS17_DNSKEY_NOT_SIGNED_BY_CDNSKEY
           'The DNSKEY RRset is not signed by the DNSKEY that the CDNSKEY record with tag '
-          . '{keytag} points to. Fetched from the nameservers with IP addresses '
+          . '{keytag} points to. Fetched from the name servers with IP addresses '
           . '"{ns_ip_list}".',
           @_;
     },
     DS17_MIXED_DELETE_CDNSKEY => sub {
         __x    # DNSSEC:DS17_MIXED_DELETE_CDNSKEY
           'The CDNSKEY RRset is a mixture between "delete" record and other records. '
-          . 'Fetched from the nameservers with IP addresses "{ns_ip_list}".',
+          . 'Fetched from the name servers with IP addresses "{ns_ip_list}".',
           @_;
     },
     DS18_NO_MATCH_CDS_RRSIG_DS => sub {
         __x    # DNSSEC:DS18_NO_MATCH_CDS_RRSIG_DS
           'The CDS RRset is not signed with a DNSKEY record that a DS record points to. '
-          . 'Fetched from the nameservers with IP addresses "{ns_ip_list}".',
+          . 'Fetched from the name servers with IP addresses "{ns_ip_list}".',
           @_;
     },
     DS18_NO_MATCH_CDNSKEY_RRSIG_DS => sub {
         __x    # DNSSEC:DS18_NO_MATCH_CDNSKEY_RRSIG_DS
           'The CDNSKEY RRset is not signed with a DNSKEY record that a DS record points to. '
-          . 'Fetched from the nameservers with IP addresses "{ns_ip_list}".',
+          . 'Fetched from the name servers with IP addresses "{ns_ip_list}".',
           @_;
     },
     DS_BUT_NOT_DNSKEY => sub {

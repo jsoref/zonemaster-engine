@@ -192,7 +192,7 @@ Readonly my %TAG_DESCRIPTIONS => (
     },
     A_QUERY_NO_RESPONSES => sub {
         __x    # BASIC:A_QUERY_NO_RESPONSES
-          'Nameservers did not respond to A query.';
+          'Name servers did not respond to A query.';
     },
     B01_CHILD_IS_ALIAS => sub {
         __x    # BASIC:B01_CHILD_IS_ALIAS
