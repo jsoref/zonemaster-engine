@@ -526,23 +526,23 @@ subtest 'set() updates values for set properties' => sub {
 subtest 'set() dies on attempts to unset properties' => sub {
     my $profile = Zonemaster::Engine::Profile->from_json( $EXAMPLE_PROFILE_1 );
 
-    throws_ok { $profile->set( 'resolver.defaults.usevc',    undef ); } qr/^.* can not be undef/, 'dies on attempt to unset resolver.defaults.usevc';
-    throws_ok { $profile->set( 'resolver.defaults.recurse',  undef ); } qr/^.* can not be undef/, 'dies on attempt to unset resolver.defaults.recurse';
-    throws_ok { $profile->set( 'resolver.defaults.igntc',    undef ); } qr/^.* can not be undef/, 'dies on attempt to unset resolver.defaults.igntc';
-    throws_ok { $profile->set( 'resolver.defaults.fallback', undef ); } qr/^.* can not be undef/, 'dies on attempt to unset resolver.defaults.fallback';
-    throws_ok { $profile->set( 'net.ipv4',                   undef ); } qr/^.* can not be undef/, 'dies on attempt to unset net.ipv4';
-    throws_ok { $profile->set( 'net.ipv6',                   undef ); } qr/^.* can not be undef/, 'dies on attempt to unset net.ipv6';
-    throws_ok { $profile->set( 'no_network',                 undef ); } qr/^.* can not be undef/, 'dies on attempt to unset no_network';
-    throws_ok { $profile->set( 'resolver.defaults.retry',    undef ); } qr/^.* can not be undef/, 'dies on attempt to unset resolver.defaults.retry';
-    throws_ok { $profile->set( 'resolver.defaults.retrans',  undef ); } qr/^.* can not be undef/, 'dies on attempt to unset resolver.defaults.retans';
-    throws_ok { $profile->set( 'resolver.source',            undef ); } qr/^.* can not be undef/, 'dies on attempt to unset resolver.source';
-    throws_ok { $profile->set( 'resolver.source4',           undef ); } qr/^.* can not be undef/, 'dies on attempt to unset resolver.source4';
-    throws_ok { $profile->set( 'resolver.source6',           undef ); } qr/^.* can not be undef/, 'dies on attempt to unset resolver.source6';
-    throws_ok { $profile->set( 'asnroots',                   undef ); } qr/^.* can not be undef/, 'dies on attempt to unset asnroots';
-    throws_ok { $profile->set( 'logfilter',                  undef ); } qr/^.* can not be undef/, 'dies on attempt to unset logfilter';
-    throws_ok { $profile->set( 'test_levels',                undef ); } qr/^.* can not be undef/, 'dies on attempt to unset test_levels';
-    throws_ok { $profile->set( 'test_cases',                 undef ); } qr/^.* can not be undef/, 'dies on attempt to unset test_cases';
-    throws_ok { $profile->set( 'cache',                      undef ); } qr/^.* can not be undef/, 'dies on attempt to unset cache';
+    throws_ok { $profile->set( 'resolver.defaults.usevc',    undef ); } qr/^.* cannot be undef/, 'dies on attempt to unset resolver.defaults.usevc';
+    throws_ok { $profile->set( 'resolver.defaults.recurse',  undef ); } qr/^.* cannot be undef/, 'dies on attempt to unset resolver.defaults.recurse';
+    throws_ok { $profile->set( 'resolver.defaults.igntc',    undef ); } qr/^.* cannot be undef/, 'dies on attempt to unset resolver.defaults.igntc';
+    throws_ok { $profile->set( 'resolver.defaults.fallback', undef ); } qr/^.* cannot be undef/, 'dies on attempt to unset resolver.defaults.fallback';
+    throws_ok { $profile->set( 'net.ipv4',                   undef ); } qr/^.* cannot be undef/, 'dies on attempt to unset net.ipv4';
+    throws_ok { $profile->set( 'net.ipv6',                   undef ); } qr/^.* cannot be undef/, 'dies on attempt to unset net.ipv6';
+    throws_ok { $profile->set( 'no_network',                 undef ); } qr/^.* cannot be undef/, 'dies on attempt to unset no_network';
+    throws_ok { $profile->set( 'resolver.defaults.retry',    undef ); } qr/^.* cannot be undef/, 'dies on attempt to unset resolver.defaults.retry';
+    throws_ok { $profile->set( 'resolver.defaults.retrans',  undef ); } qr/^.* cannot be undef/, 'dies on attempt to unset resolver.defaults.retans';
+    throws_ok { $profile->set( 'resolver.source',            undef ); } qr/^.* cannot be undef/, 'dies on attempt to unset resolver.source';
+    throws_ok { $profile->set( 'resolver.source4',           undef ); } qr/^.* cannot be undef/, 'dies on attempt to unset resolver.source4';
+    throws_ok { $profile->set( 'resolver.source6',           undef ); } qr/^.* cannot be undef/, 'dies on attempt to unset resolver.source6';
+    throws_ok { $profile->set( 'asnroots',                   undef ); } qr/^.* cannot be undef/, 'dies on attempt to unset asnroots';
+    throws_ok { $profile->set( 'logfilter',                  undef ); } qr/^.* cannot be undef/, 'dies on attempt to unset logfilter';
+    throws_ok { $profile->set( 'test_levels',                undef ); } qr/^.* cannot be undef/, 'dies on attempt to unset test_levels';
+    throws_ok { $profile->set( 'test_cases',                 undef ); } qr/^.* cannot be undef/, 'dies on attempt to unset test_cases';
+    throws_ok { $profile->set( 'cache',                      undef ); } qr/^.* cannot be undef/, 'dies on attempt to unset cache';
 };
 
 subtest 'set() dies if the given property name is invalid' => sub {

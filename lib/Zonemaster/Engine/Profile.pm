@@ -349,7 +349,7 @@ sub _set {
                             Data::Dumper::Dumper($value);
     # $value is a Scalar
     if ( ! $value_type  or $value_type eq q{SCALAR} ) {
-        die "Property $property_name can not be undef" if not defined $value;
+        die "Property $property_name cannot be undef" if not defined $value;
 
         # Boolean
         if ( $profile_properties_details{$property_name}->{type} eq q{Bool} ) {
