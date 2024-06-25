@@ -284,7 +284,7 @@ Returns the global L<Zonemaster::Engine::Logger> object.
 
 =item all_tags()
 
-Returns a list of all the tags that can be logged for all avilable test modules.
+Returns a list of all the tags that can be logged for all available test modules.
 
 =item all_methods()
 
