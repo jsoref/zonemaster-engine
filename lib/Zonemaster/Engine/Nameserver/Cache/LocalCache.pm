@@ -69,7 +69,7 @@ sub get_key {
 
 =head1 NAME
 
-Zonemaster::Engine::Nameserver::LocalCache - local shared caches for nameserver objects
+Zonemaster::Engine::Nameserver::LocalCache - local shared caches for name server objects
 
 =head1 SYNOPSIS
 

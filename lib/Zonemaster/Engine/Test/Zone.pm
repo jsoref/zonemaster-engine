@@ -1504,7 +1504,7 @@ sub zone11 {
     local $Zonemaster::Engine::Logger::TEST_CASE_NAME = 'Zone11';
     push my @results, _emit_log( TEST_CASE_START => { testcase => $Zonemaster::Engine::Logger::TEST_CASE_NAME } );
 
-    # This hash maps nameserver IP addresses to arrayrefs of TXT resource
+    # This hash maps name server IP addresses to arrayrefs of TXT resource
     # record data matching the signature for SPF policies. These arrays
     # usually contain at most one string.
     my %ns_spf = ();

@@ -328,7 +328,7 @@ look for that if you recurse up the tree).
 
 A reference to an array of L<Zonemaster::Engine::DNSName> objects, holding the
 names of the nameservers for the domain, as returned by the first
-responding nameserver in the glue list.
+responding name server in the glue list.
 
 =item ns
 
@@ -344,7 +344,7 @@ them all can take som considerable time.
 =item glue_names
 
 A reference to an array of L<Zonemaster::Engine::DNSName> objects, holding the names
-of this zone's nameservers as listed at the first responding nameserver of the
+of this zone's nameservers as listed at the first responding name server of the
 parent zone.
 
 =item glue
@@ -363,7 +363,7 @@ found recursively.
 =item glue_addresses
 
 A list of L<Zonemaster::LDNS::RR::A> and L<Zonemaster::LDNS::RR::AAAA> records returned in
-the Additional section of an NS query to the first listed nameserver for the
+the Additional section of an NS query to the first listed name server for the
 parent domain.
 
 =back
@@ -374,7 +374,7 @@ parent domain.
 
 =item query_one($name[, $type[, $flags]])
 
-Sends (or retrieves from cache) a query for the given name, type and flags sent to the first nameserver in the zone's ns list. If there is a
+Sends (or retrieves from cache) a query for the given name, type and flags sent to the first name server in the zone's ns list. If there is a
 response, it will be returned in a L<Zonemaster::Engine::Packet> object. If the type arguments is not given, it defaults to 'A'. If the flags are not given, they default to C<class> IN and C<dnssec>, C<usevc> and C<recurse> according to configuration (which is by default off on all three).
 
 =item query_persistent($name[, $type[, $flags]])

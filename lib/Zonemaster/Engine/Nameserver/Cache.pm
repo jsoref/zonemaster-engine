@@ -48,7 +48,7 @@ sub empty_cache {
 
 =head1 NAME
 
-Zonemaster::Engine::Nameserver::Cache - shared caches for nameserver objects
+Zonemaster::Engine::Nameserver::Cache - shared caches for name server objects
 
 =head1 SYNOPSIS
 
@@ -60,7 +60,7 @@ Zonemaster::Engine::Nameserver::Cache - shared caches for nameserver objects
 
 =item address
 
-A L<Net::IP::XS> object holding the nameserver's address.
+A L<Net::IP::XS> object holding the name server's address.
 
 =item data
 

@@ -133,7 +133,7 @@ sub get_key {
 
 =head1 NAME
 
-Zonemaster::Engine::Nameserver::Cache::RedisCache - global shared caches for nameserver objects
+Zonemaster::Engine::Nameserver::Cache::RedisCache - global shared caches for name server objects
 
 =head1 SYNOPSIS
 
