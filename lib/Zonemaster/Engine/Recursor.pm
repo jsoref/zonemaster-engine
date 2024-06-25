@@ -566,7 +566,7 @@ Class method to create fake addresses for fake delegations for a specified domai
 
 =head2 has_fake_addresses($domain)
 
-Check if there is at least one fake nameserver specified for the given domain.
+Check if there is at least one fake name server specified for the given domain.
 
 =head2 get_fake_addresses($domain, $nsname)
 

@@ -127,25 +127,25 @@ Readonly my %TAG_DESCRIPTIONS => (
     },
     NAMESERVER_IP_WITHOUT_REVERSE => sub {
         __x    # ADDRESS:NAMESERVER_IP_WITHOUT_REVERSE
-          'Nameserver {nsname} has an IP address ({ns_ip}) without PTR configured.', @_;
+          'Name server {nsname} has an IP address ({ns_ip}) without PTR configured.', @_;
     },
     NAMESERVER_IP_PTR_MISMATCH => sub {
         __x    # ADDRESS:NAMESERVER_IP_PTR_MISMATCH
-          'Nameserver {nsname} has an IP address ({ns_ip}) with mismatched PTR result ({names}).', @_;
+          'Name server {nsname} has an IP address ({ns_ip}) with mismatched PTR result ({names}).', @_;
     },
     NAMESERVER_IP_PRIVATE_NETWORK => sub {
         __x    # ADDRESS:NAMESERVER_IP_PRIVATE_NETWORK
-          'Nameserver {nsname} has an IP address ({ns_ip}) '
+          'Name server {nsname} has an IP address ({ns_ip}) '
           . 'with prefix {prefix} referenced in {reference} as a \'{name}\'.',
           @_;
     },
     NO_IP_PRIVATE_NETWORK => sub {
         __x    # ADDRESS:NO_IP_PRIVATE_NETWORK
-          'All Nameserver addresses are in the routable public addressing space.', @_;
+          'All Name server addresses are in the routable public addressing space.', @_;
     },
     NAMESERVERS_IP_WITH_REVERSE => sub {
         __x    # ADDRESS:NAMESERVERS_IP_WITH_REVERSE
-          "Reverse DNS entry exists for each Nameserver IP address.", @_;
+          "Reverse DNS entry exists for each Name server IP address.", @_;
     },
     NAMESERVER_IP_PTR_MATCH => sub {
         __x    # ADDRESS:NAMESERVER_IP_PTR_MATCH

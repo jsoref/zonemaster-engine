@@ -278,21 +278,21 @@ Readonly my %TAG_DESCRIPTIONS => (
     },
     NAMESERVER_DISCOURAGED_DOUBLE_DASH => sub {
         __x    # SYNTAX:NAMESERVER_DISCOURAGED_DOUBLE_DASH
-          'Nameserver ({domain}) has a label ({label}) with a double hyphen (\'--\') '
+          'Name server ({domain}) has a label ({label}) with a double hyphen (\'--\') '
           . 'in position 3 and 4 (with a prefix which is not \'xn--\').',
           @_;
     },
     NAMESERVER_NON_ALLOWED_CHARS => sub {
         __x    # SYNTAX:NAMESERVER_NON_ALLOWED_CHARS
-          'Found illegal characters in the nameserver ({domain}).', @_;
+          'Found illegal characters in the name server ({domain}).', @_;
     },
     NAMESERVER_NUMERIC_TLD => sub {
         __x    # SYNTAX:NAMESERVER_NUMERIC_TLD
-          'Nameserver ({domain}) within a \'numeric only\' TLD ({tld}).', @_;
+          'Name server ({domain}) within a \'numeric only\' TLD ({tld}).', @_;
     },
     NAMESERVER_SYNTAX_OK => sub {
         __x    # SYNTAX:NAMESERVER_SYNTAX_OK
-          'Nameserver ({domain}) syntax is valid.', @_;
+          'Name server ({domain}) syntax is valid.', @_;
     },
     NON_ALLOWED_CHARS => sub {
         __x    # SYNTAX:NON_ALLOWED_CHARS
@@ -314,11 +314,11 @@ Readonly my %TAG_DESCRIPTIONS => (
     },
     NO_RESPONSE_MX_QUERY => sub {
         __x    # SYNTAX:NO_RESPONSE_MX_QUERY
-          'No response from nameserver(s) on MX queries.', @_;
+          'No response from name server(s) on MX queries.', @_;
     },
     NO_RESPONSE_SOA_QUERY => sub {
         __x    # SYNTAX:NO_RESPONSE_SOA_QUERY
-          'No response from nameserver(s) on SOA queries.', @_;
+          'No response from name server(s) on SOA queries.', @_;
     },
     ONLY_ALLOWED_CHARS => sub {
         __x    # SYNTAX:ONLY_ALLOWED_CHARS

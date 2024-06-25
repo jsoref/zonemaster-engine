@@ -1539,11 +1539,11 @@ Readonly my %TAG_DESCRIPTIONS => (
     },
     NO_RESPONSE_DNSKEY => sub {
         __x    # DNSSEC:NO_RESPONSE_DNSKEY
-          'Nameserver {ns} responded with no DNSKEY record(s).', @_;
+          'Name server {ns} responded with no DNSKEY record(s).', @_;
     },
     NO_RESPONSE => sub {
         __x    # DNSSEC:NO_RESPONSE
-          'Nameserver {ns} did not respond.', @_;
+          'Name server {ns} did not respond.', @_;
     },
     NOT_SIGNED => sub {
         __x    # DNSSEC:NOT_SIGNED

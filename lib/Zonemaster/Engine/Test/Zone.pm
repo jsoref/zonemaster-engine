@@ -220,7 +220,7 @@ sub metadata {
 Readonly my %TAG_DESCRIPTIONS => (
     ZONE01 => sub {
         __x    # ZONE:ZONE01
-          'Fully qualified master nameserver in SOA';
+          'Fully qualified master name server in SOA';
     },
     ZONE02 => sub {
         __x    # ZONE:ZONE02
@@ -324,27 +324,27 @@ Readonly my %TAG_DESCRIPTIONS => (
     },
     MULTIPLE_SOA => sub {
         __x    # ZONE:MULTIPLE_SOA
-          'Nameserver {ns} responds with multiple ({count}) SOA records on SOA queries.', @_;
+          'Name server {ns} responds with multiple ({count}) SOA records on SOA queries.', @_;
     },
     NO_RESPONSE => sub {
         __x    # ZONE:NO_RESPONSE
-          'Nameserver {ns} did not respond.', @_;
+          'Name server {ns} did not respond.', @_;
     },
     NO_RESPONSE_SOA_QUERY => sub {
         __x    # ZONE:NO_RESPONSE_SOA_QUERY
-          'No response from nameserver(s) on SOA queries.';
+          'No response from name server(s) on SOA queries.';
     },
     NO_RESPONSE_MX_QUERY => sub {
         __x    # ZONE:NO_RESPONSE_MX_QUERY
-          'No response from nameserver(s) on MX queries.';
+          'No response from name server(s) on MX queries.';
     },
     NO_SOA_IN_RESPONSE => sub {
         __x    # ZONE:NO_SOA_IN_RESPONSE
-          'Response from nameserver {ns} on SOA queries does not contain SOA record.', @_;
+          'Response from name server {ns} on SOA queries does not contain SOA record.', @_;
     },
     MNAME_HAS_NO_ADDRESS => sub {
         __x    # ZONE:MNAME_HAS_NO_ADDRESS
-          'No IP address found for SOA \'mname\' nameserver ({mname}).', @_;
+          'No IP address found for SOA \'mname\' name server ({mname}).', @_;
     },
     ONE_SOA => sub {
         __x    # ZONE:ONE_SOA
@@ -374,7 +374,7 @@ Readonly my %TAG_DESCRIPTIONS => (
     },
     WRONG_SOA => sub {
         __x    # ZONE:WRONG_SOA
-          'Nameserver {ns} responds with a wrong owner name ({owner} instead of {name}) on SOA queries.', @_;
+          'Name server {ns} responds with a wrong owner name ({owner} instead of {name}) on SOA queries.', @_;
     },
     Z01_MNAME_HAS_LOCALHOST_ADDR => sub {
         __x    # ZONE:Z01_MNAME_HAS_LOCALHOST_ADDR
@@ -1505,7 +1505,7 @@ sub zone11 {
     local $Zonemaster::Engine::Logger::TEST_CASE_NAME = 'Zone11';
     push my @results, _emit_log( TEST_CASE_START => { testcase => $Zonemaster::Engine::Logger::TEST_CASE_NAME } );
 
-    # This hash maps nameserver IP addresses to arrayrefs of TXT resource
+    # This hash maps name server IP addresses to arrayrefs of TXT resource
     # record data matching the signature for SPF policies. These arrays
     # usually contain at most one string.
     my %ns_spf = ();

@@ -183,91 +183,91 @@ Readonly my %TAG_DESCRIPTIONS => (
     },
     CN01_MISSING_NS_RECORD_UDP => sub {
         __x    # CONNECTIVITY:CN01_MISSING_NS_RECORD_UDP
-          'Nameserver {ns} responds to a NS query with no NS records in the answer section over UDP.', @_;
+          'Name server {ns} responds to a NS query with no NS records in the answer section over UDP.', @_;
     },
     CN01_MISSING_SOA_RECORD_UDP => sub {
         __x    # CONNECTIVITY:CN01_MISSING_SOA_RECORD_UDP
-          'Nameserver {ns} responds to a SOA query with no SOA records in the answer section over UDP.', @_;
+          'Name server {ns} responds to a SOA query with no SOA records in the answer section over UDP.', @_;
     },
     CN01_NO_RESPONSE_NS_QUERY_UDP => sub {
         __x    # CONNECTIVITY:CN01_NO_RESPONSE_NS_QUERY_UDP
-          'Nameserver {ns} does not respond to NS queries over UDP.', @_;
+          'Name server {ns} does not respond to NS queries over UDP.', @_;
     },
     CN01_NO_RESPONSE_SOA_QUERY_UDP => sub {
         __x    # CONNECTIVITY:CN01_NO_RESPONSE_SOA_QUERY_UDP
-          'Nameserver {ns} does not respond to SOA queries over UDP.', @_;
+          'Name server {ns} does not respond to SOA queries over UDP.', @_;
     },
     CN01_NO_RESPONSE_UDP => sub {
         __x    # CONNECTIVITY:CN01_NO_RESPONSE_UDP
-          'Nameserver {ns} does not respond to any queries over UDP.', @_;
+          'Name server {ns} does not respond to any queries over UDP.', @_;
     },
     CN01_NS_RECORD_NOT_AA_UDP => sub {
         __x    # CONNECTIVITY:CN01_NS_RECORD_NOT_AA_UDP
-          'Nameserver {ns} does not give an authoritative response on an NS query over UDP.', @_;
+          'Name server {ns} does not give an authoritative response on an NS query over UDP.', @_;
     },
     CN01_SOA_RECORD_NOT_AA_UDP => sub {
         __x    # CONNECTIVITY:CN01_SOA_RECORD_NOT_AA_UDP
-          'Nameserver {ns} does not give an authoritative response on an SOA query over UDP.', @_;
+          'Name server {ns} does not give an authoritative response on an SOA query over UDP.', @_;
     },
     CN01_UNEXPECTED_RCODE_NS_QUERY_UDP => sub {
         __x    # CONNECTIVITY:CN01_UNEXPECTED_RCODE_NS_QUERY_UDP
-          'Nameserver {ns} responds with an unexpected RCODE ({rcode}) on an NS query over UDP.', @_;
+          'Name server {ns} responds with an unexpected RCODE ({rcode}) on an NS query over UDP.', @_;
     },
     CN01_UNEXPECTED_RCODE_SOA_QUERY_UDP => sub {
         __x    # CONNECTIVITY:CN01_UNEXPECTED_RCODE_SOA_QUERY_UDP
-          'Nameserver {ns} responds with an unexpected RCODE ({rcode}) on an SOA query over UDP.', @_;
+          'Name server {ns} responds with an unexpected RCODE ({rcode}) on an SOA query over UDP.', @_;
     },
     CN01_WRONG_NS_RECORD_UDP => sub {
         __x    # CONNECTIVITY:CN01_WRONG_NS_RECORD_UDP
-          'Nameserver {ns} responds with a wrong owner name ({domain_found} instead of {domain_expected}) on NS queries over UDP.', @_;
+          'Name server {ns} responds with a wrong owner name ({domain_found} instead of {domain_expected}) on NS queries over UDP.', @_;
     },
     CN01_WRONG_SOA_RECORD_UDP => sub {
         __x    # CONNECTIVITY:CN01_WRONG_SOA_RECORD_UDP
-          'Nameserver {ns} responds with a wrong owner name ({domain_found} instead of {domain_expected}) on SOA queries over UDP.', @_;
+          'Name server {ns} responds with a wrong owner name ({domain_found} instead of {domain_expected}) on SOA queries over UDP.', @_;
     },
     CN02_MISSING_NS_RECORD_TCP => sub {
         __x    # CONNECTIVITY:CN02_MISSING_NS_RECORD_TCP
-          'Nameserver {ns} responds to a NS query with no NS records in the answer section over TCP.', @_;
+          'Name server {ns} responds to a NS query with no NS records in the answer section over TCP.', @_;
     },
     CN02_MISSING_SOA_RECORD_TCP => sub {
         __x    # CONNECTIVITY:CN02_MISSING_SOA_RECORD_TCP
-          'Nameserver {ns} responds to a SOA query with no SOA records in the answer section over TCP.', @_;
+          'Name server {ns} responds to a SOA query with no SOA records in the answer section over TCP.', @_;
     },
     CN02_NO_RESPONSE_NS_QUERY_TCP => sub {
         __x    # CONNECTIVITY:CN02_NO_RESPONSE_NS_QUERY_TCP
-          'Nameserver {ns} does not respond to NS queries over TCP.', @_;
+          'Name server {ns} does not respond to NS queries over TCP.', @_;
     },
     CN02_NO_RESPONSE_SOA_QUERY_TCP => sub {
         __x    # CONNECTIVITY:CN02_NO_RESPONSE_SOA_QUERY_TCP
-          'Nameserver {ns} does not respond to SOA queries over TCP.', @_;
+          'Name server {ns} does not respond to SOA queries over TCP.', @_;
     },
     CN02_NO_RESPONSE_TCP => sub {
         __x    # CONNECTIVITY:CN02_NO_RESPONSE_TCP
-          'Nameserver {ns} does not respond to any queries over TCP.', @_;
+          'Name server {ns} does not respond to any queries over TCP.', @_;
     },
     CN02_NS_RECORD_NOT_AA_TCP => sub {
         __x    # CONNECTIVITY:CN02_NS_RECORD_NOT_AA_TCP
-          'Nameserver {ns} does not give an authoritative response on an NS query over TCP.', @_;
+          'Name server {ns} does not give an authoritative response on an NS query over TCP.', @_;
     },
     CN02_SOA_RECORD_NOT_AA_TCP => sub {
         __x    # CONNECTIVITY:CN02_SOA_RECORD_NOT_AA_TCP
-          'Nameserver {ns} does not give an authoritative response on an SOA query over TCP.', @_;
+          'Name server {ns} does not give an authoritative response on an SOA query over TCP.', @_;
     },
     CN02_UNEXPECTED_RCODE_NS_QUERY_TCP => sub {
         __x    # CONNECTIVITY:CN02_UNEXPECTED_RCODE_NS_QUERY_TCP
-          'Nameserver {ns} responds with an unexpected RCODE ({rcode}) on an NS query over TCP.', @_;
+          'Name server {ns} responds with an unexpected RCODE ({rcode}) on an NS query over TCP.', @_;
     },
     CN02_UNEXPECTED_RCODE_SOA_QUERY_TCP => sub {
         __x    # CONNECTIVITY:CN02_UNEXPECTED_RCODE_SOA_QUERY_TCP
-          'Nameserver {ns} responds with an unexpected RCODE ({rcode}) on an SOA query over TCP.', @_;
+          'Name server {ns} responds with an unexpected RCODE ({rcode}) on an SOA query over TCP.', @_;
     },
     CN02_WRONG_NS_RECORD_TCP => sub {
         __x    # CONNECTIVITY:CN02_WRONG_NS_RECORD_TCP
-          'Nameserver {ns} responds with a wrong owner name ({domain_found} instead of {domain_expected}) on NS queries over TCP.', @_;
+          'Name server {ns} responds with a wrong owner name ({domain_found} instead of {domain_expected}) on NS queries over TCP.', @_;
     },
     CN02_WRONG_SOA_RECORD_TCP => sub {
         __x    # CONNECTIVITY:CN02_WRONG_SOA_RECORD_TCP
-          'Nameserver {ns} responds with a wrong owner name ({domain_found} instead of {domain_expected}) on SOA queries over TCP.', @_;
+          'Name server {ns} responds with a wrong owner name ({domain_found} instead of {domain_expected}) on SOA queries over TCP.', @_;
     },
     CN04_ASN_INFOS_ANNOUNCE_IN => sub {
         __x    # CONNECTIVITY:ASN_INFOS_ANNOUNCE_IN

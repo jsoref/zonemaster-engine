@@ -249,11 +249,11 @@ Readonly my %TAG_DESCRIPTIONS => (
     },
     EXTRA_NAME_CHILD => sub {
         __x    # DELEGATION:EXTRA_NAME_CHILD
-          "Child has nameserver(s) not listed at parent ({extra}).", @_;
+          "Child has name server(s) not listed at parent ({extra}).", @_;
     },
     EXTRA_NAME_PARENT => sub {
         __x    # DELEGATION:EXTRA_NAME_PARENT
-          "Parent has nameserver(s) not listed at the child ({extra}).", @_;
+          "Parent has name server(s) not listed at the child ({extra}).", @_;
     },
     IPV4_DISABLED => sub {
         __x    # DELEGATION:IPV4_DISABLED
@@ -265,15 +265,15 @@ Readonly my %TAG_DESCRIPTIONS => (
     },
     IS_NOT_AUTHORITATIVE => sub {
         __x    # DELEGATION:IS_NOT_AUTHORITATIVE
-          "Nameserver {ns} response is not authoritative on {proto} port 53.", @_;
+          "Name server {ns} response is not authoritative on {proto} port 53.", @_;
     },
     NAMES_MATCH => sub {
         __x    # DELEGATION:NAMES_MATCH
-          "All of the nameserver names are listed both at parent and child.", @_;
+          "All of the name server names are listed both at parent and child.", @_;
     },
     NO_RESPONSE => sub {
         __x    # DELEGATION:NO_RESPONSE
-          'Nameserver {ns} did not respond to a query for name {query_name} and type {rrtype}.', @_;
+          'Name server {ns} did not respond to a query for name {query_name} and type {rrtype}.', @_;
     },
     NOT_ENOUGH_IPV4_NS_CHILD => sub {
         __x    # DELEGATION:NOT_ENOUGH_IPV4_NS_CHILD
@@ -309,35 +309,35 @@ Readonly my %TAG_DESCRIPTIONS => (
     },
     NO_IPV4_NS_CHILD => sub {
         __x    # DELEGATION:NO_IPV4_NS_CHILD
-          "Child lists no nameserver that resolves to an IPv4 address. "
+          "Child lists no name server that resolves to an IPv4 address. "
           . "If any were present, the minimum allowed would be {minimum}.",
           @_;
     },
     NO_IPV4_NS_DEL => sub {
         __x    # DELEGATION:NO_IPV4_NS_DEL
-          "Delegation lists no nameserver that resolves to an IPv4 address. "
+          "Delegation lists no name server that resolves to an IPv4 address. "
           . "If any were present, the minimum allowed would be {minimum}.",
           @_;
     },
     NO_IPV6_NS_CHILD => sub {
         __x    # DELEGATION:NO_IPV6_NS_CHILD
-          "Child lists no nameserver that resolves to an IPv6 address. "
+          "Child lists no name server that resolves to an IPv6 address. "
           . "If any were present, the minimum allowed would be {minimum}.",
           @_;
     },
     NO_IPV6_NS_DEL => sub {
         __x    # DELEGATION:NO_IPV6_NS_DEL
-          "Delegation lists no nameserver that resolves to an IPv6 address. "
+          "Delegation lists no name server that resolves to an IPv6 address. "
           . "If any were present, the minimum allowed would be {minimum}.",
           @_;
     },
     NS_IS_CNAME => sub {
         __x    # DELEGATION:NS_IS_CNAME
-          "Nameserver {nsname} RR points to CNAME.", @_;
+          "Name server {nsname} RR points to CNAME.", @_;
     },
     NO_NS_CNAME => sub {
         __x    # DELEGATION:NO_NS_CNAME
-          "No nameserver points to CNAME alias.", @_;
+          "No name server points to CNAME alias.", @_;
     },
     REFERRAL_SIZE_TOO_LARGE => sub {
         __x    # DELEGATION:REFERRAL_SIZE_TOO_LARGE
@@ -373,7 +373,7 @@ Readonly my %TAG_DESCRIPTIONS => (
     },
     UNEXPECTED_RCODE => sub {
         __x    # DELEGATION:UNEXPECTED_RCODE
-          'Nameserver {ns} answered query for name {query_name} and type {rrtype} with RCODE {rcode}.', @_;
+          'Name server {ns} answered query for name {query_name} and type {rrtype} with RCODE {rcode}.', @_;
     },
 
 );

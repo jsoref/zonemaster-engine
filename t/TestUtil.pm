@@ -45,7 +45,7 @@ unknown to the include path @INC, it can be including using the following code:
 
 This method loads unit test data (test scenarios) and, after some data checks and if the test scenario is testable,
 it runs all external L<MethodsV2|Zonemaster::Engine::Test::TestMethodsV2> methods and checks for the presence (or absence) of
-specific nameservers data for each specified test scenario.
+specific name server data for each specified test scenario.
 
 If C<$selected_scenarios> has been set in the call to a comma separated list of names (or a single name), then only those
 scenarios will be run, and they will always be run even if they has been set as not testable.

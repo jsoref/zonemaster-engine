@@ -29,7 +29,7 @@ The zone object it's given has glue records.
 
 =item
 
-The zone object it's given has nameservers.
+The zone object it's given has name servers.
 
 =back
 

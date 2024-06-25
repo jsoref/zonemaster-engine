@@ -286,11 +286,11 @@ Readonly my %TAG_DESCRIPTIONS => (
     },
     HAS_A_RECORDS => sub {
         __x    # BASIC:HAS_A_RECORDS
-          'Nameserver {ns} returned "A" record(s) for {domain}.', @_;
+          'Name server {ns} returned "A" record(s) for {domain}.', @_;
     },
     HAS_NAMESERVER_NO_WWW_A_TEST => sub {
         __x    # BASIC:HAS_NAMESERVER_NO_WWW_A_TEST
-          'Functional nameserver found. "A" query for www.{zname} test skipped.', @_;
+          'Functional name server found. "A" query for www.{zname} test skipped.', @_;
     },
     IPV4_DISABLED => sub {
         __x    # BASIC:IPV4_DISABLED
@@ -310,7 +310,7 @@ Readonly my %TAG_DESCRIPTIONS => (
     },
     NO_A_RECORDS => sub {
         __x    # BASIC:NO_A_RECORDS
-          'Nameserver {ns} did not return "A" record(s) for {domain}.', @_;
+          'Name server {ns} did not return "A" record(s) for {domain}.', @_;
     },
     TEST_CASE_END => sub {
         __x    # BASIC:TEST_CASE_END
