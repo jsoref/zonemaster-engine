@@ -352,7 +352,7 @@ Readonly my %TAG_DESCRIPTIONS => (
     },
     ONE_SOA => sub {
         __x    # ZONE:ONE_SOA
-          'A unique SOA record is returned by all nameservers of the zone.', @_;
+          'A unique SOA record is returned by all name servers of the zone.', @_;
     },
     EXPIRE_MINIMUM_VALUE_OK => sub {
         __x    # ZONE:EXPIRE_MINIMUM_VALUE_OK
@@ -494,7 +494,7 @@ Readonly my %TAG_DESCRIPTIONS => (
     },
     Z11_SPF1_SYNTAX_ERROR => sub {
         __x    # ZONE:Z11_SPF1_SYNTAX_ERROR
-          'The SPF version 1 policy has a syntax error. Policy retrieved from the following nameservers: {ns_ip_list}.', @_;
+          'The SPF version 1 policy has a syntax error. Policy retrieved from the following name servers: {ns_ip_list}.', @_;
     },
     Z11_SPF1_SYNTAX_OK => sub {
         __x    # ZONE:Z11_SPF1_SYNTAX_OK

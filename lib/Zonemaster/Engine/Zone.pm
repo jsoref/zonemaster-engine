@@ -327,7 +327,7 @@ look for that if you recurse up the tree).
 =item ns_names
 
 A reference to an array of L<Zonemaster::Engine::DNSName> objects, holding the
-names of the nameservers for the domain, as returned by the first
+names of the name servers for the domain, as returned by the first
 responding name server in the glue list.
 
 =item ns
@@ -338,13 +338,13 @@ looking up addresses for the names. One element will be added to this
 list for each unique name/IP pair. Names for which no addresses could
 be found will not be in this list. The list is lazy-loading, so take
 care to only look at as many entries as you really need. There are
-zones with more than 20 nameservers, and looking up the addresses of
+zones with more than 20 name servers, and looking up the addresses of
 them all can take som considerable time.
 
 =item glue_names
 
 A reference to an array of L<Zonemaster::Engine::DNSName> objects, holding the names
-of this zone's nameservers as listed at the first responding name server of the
+of this zone's name servers as listed at the first responding name server of the
 parent zone.
 
 =item glue
@@ -390,7 +390,7 @@ first server that returns one, it returns the first packet that has the AA flag 
 
 =item query_all($name, $type, $flags)
 
-Sends (or retrieves from cache) queries to all the nameservers listed in the zone's ns list, and returns a reference to an array with the
+Sends (or retrieves from cache) queries to all the name servers listed in the zone's ns list, and returns a reference to an array with the
 responses. The responses can be either L<Zonemaster::Engine::Packet> objects or C<undef> values. The arguments are the same as for L<query_one>.
 
 =item is_in_zone($name)
