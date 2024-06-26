@@ -1036,19 +1036,19 @@ Readonly my %TAG_DESCRIPTIONS => (
     },
     DS10_NAME_NOT_COVERED_BY_NSEC => sub {
         __x    # DNSSEC:DS10_NAME_NOT_COVERED_BY_NSEC
-          'A non-existent name is not correctly covered by the NSEC records. Fetched from '
+          'A nonexistent name is not correctly covered by the NSEC records. Fetched from '
           . 'the nameservers with IP addresses "{ns_ip_list}".',
           @_;
     },
     DS10_NAME_NOT_COVERED_BY_NSEC3 => sub {
         __x    # DNSSEC:DS10_NAME_NOT_COVERED_BY_NSEC3
-          'A non-existent name is not correctly covered by the NSEC3 records. Fetched from '
+          'A nonexistent name is not correctly covered by the NSEC3 records. Fetched from '
           . 'the nameservers with IP addresses "{ns_ip_list}".',
           @_;
     },
     DS10_NON_EXISTENT_RESPONSE_ERROR => sub {
         __x    # DNSSEC:DS10_NON_EXISTENT_RESPONSE_ERROR
-          'No response or error in response on an expected non-existent name. Fetched from '
+          'No response or error in response on an expected nonexistent name. Fetched from '
           . 'the nameservers with IP addresses "{ns_ip_list}".',
           @_;
     },
@@ -3028,7 +3028,7 @@ sub dnssec10 {
 
         #----------------------------------------------------------------------
         # vi. If the following criteria are met go to next name server IP:
-        #    a. The The RCODE of response is "NoError".
+        #    a. The RCODE of response is "NoError".
         #    b. The answer section has an RRset with RR type "A" and either:
         #       a. The "A" RRset has the same owner name as the query name, or
         #       b. There are one or more record of RR type "CNAME" chaining from
@@ -3043,10 +3043,10 @@ sub dnssec10 {
         #
         # Testing zones :
         # SHOULD NOT PASS
-        # - dnssec10-non-existent-domain-name-exists-01.zft-root.rd.nic.fr
-        # - dnssec10-non-existent-domain-name-exists-02.zft-root.rd.nic.fr
+        # - dnssec10-nonexistent-domain-name-exists-01.zft-root.rd.nic.fr
+        # - dnssec10-nonexistent-domain-name-exists-02.zft-root.rd.nic.fr
         # SHOULD PASS
-        # - dnssec10-non-existent-domain-name-exists-03.zft-root.rd.nic.fr
+        # - dnssec10-nonexistent-domain-name-exists-03.zft-root.rd.nic.fr
         #----------------------------------------------------------------------
         if ( $a_p->rcode eq q{NOERROR} ) {
             my $step_a = 1;
@@ -3100,7 +3100,7 @@ sub dnssec10 {
         }
         #----------------------------------------------------------------------
         # vii. If the following criteria are met go to next name server IP:
-        #    a. The The RCODE of response is "NoError".
+        #    a. The RCODE of response is "NoError".
         #    b. The answer section has one or more record of RR type "CNAME" in
         #       a chain where first record has the owner name matching the query name.
         #    c. The answer section has RRsig record or records in the answer section
@@ -3111,7 +3111,7 @@ sub dnssec10 {
         #
         # Testing zones :
         # SHOULD NOT PASS
-        # - dnssec10-non-existent-domain-name-exists-04.zft-root.rd.nic.fr
+        # - dnssec10-nonexistent-domain-name-exists-04.zft-root.rd.nic.fr
         #----------------------------------------------------------------------
         if ( $a_p->rcode eq q{NOERROR} ) {
             my $step_a = 1;
@@ -3181,7 +3181,7 @@ sub dnssec10 {
         #
         # Testing zones :
         # DS10_ANSWER_VERIFY_ERROR
-        # - dnssec10-non-existent-domain-name-exists-05.zft-root.rd.nic.fr
+        # - dnssec10-nonexistent-domain-name-exists-05.zft-root.rd.nic.fr
         #----------------------------------------------------------------------
         my @rrset;
         push @rrset, @a_records, @cname_records;
