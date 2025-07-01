@@ -43,7 +43,7 @@ ok( $p3 ne $p4,          'Same packet object not returned from other server' );
 ok( $p3 ne $p1,          'Same packet object not returned with other flag' );
 
 my $nscopy = Zonemaster::Engine->ns( 'ns.nic.se.', '2001:67c:124c:100a:0000::45' );
-ok( $nsv6 eq $nscopy, 'Same nameserver object returned' );
+ok( $nsv6 eq $nscopy, 'Same name server object returned' );
 my $nssame = Zonemaster::Engine->ns( 'foo.example.org', '2001:67c:124c:100a:0000::45' );
 ok(
     ( $nssame ne $nsv6 and $nssame->cache eq $nsv6->cache ),
@@ -56,7 +56,7 @@ SKIP: {
     Zonemaster::Engine::Nameserver->save( $name );
     my $count = keys %Zonemaster::Engine::Nameserver::object_cache;
     undef %Zonemaster::Engine::Nameserver::object_cache;
-    is( scalar( keys %Zonemaster::Engine::Nameserver::object_cache ), 0, 'Nameserver cache is empty after clear.' );
+    is( scalar( keys %Zonemaster::Engine::Nameserver::object_cache ), 0, 'Name server cache is empty after clear.' );
     Zonemaster::Engine::Nameserver->restore( $name );
     is( scalar( keys %Zonemaster::Engine::Nameserver::object_cache ),
         $count, 'Same number of top-level keys in cache after restore.' );

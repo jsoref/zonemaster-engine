@@ -320,31 +320,31 @@ Readonly my %TAG_DESCRIPTIONS => (
     },
     AAAA_BAD_RDATA => sub {
         __x    # NAMESERVER:AAAA_BAD_RDATA
-            'Nameserver {ns} answered AAAA query with an unexpected RDATA length ({length} instead of 16).', @_;
+            'Name server {ns} answered AAAA query with an unexpected RDATA length ({length} instead of 16).', @_;
     },
     AAAA_QUERY_DROPPED => sub {
         __x    # NAMESERVER:AAAA_QUERY_DROPPED
-          'Nameserver {ns} dropped AAAA query.', @_;
+          'Name server {ns} dropped AAAA query.', @_;
     },
     AAAA_UNEXPECTED_RCODE => sub {
         __x    # NAMESERVER:AAAA_UNEXPECTED_RCODE
-          'Nameserver {ns} answered AAAA query with an unexpected rcode ({rcode}).', @_;
+          'Name server {ns} answered AAAA query with an unexpected rcode ({rcode}).', @_;
     },
     AAAA_WELL_PROCESSED => sub {
         __x    # NAMESERVER:AAAA_WELL_PROCESSED
-          'The following nameservers answer AAAA queries without problems : {ns_list}.', @_;
+          'The following name servers answer AAAA queries without problems : {ns_list}.', @_;
     },
     A_UNEXPECTED_RCODE => sub {
         __x    # NAMESERVER:A_UNEXPECTED_RCODE
-          'Nameserver {ns} answered A query with an unexpected rcode ({rcode}).', @_;
+          'Name server {ns} answered A query with an unexpected rcode ({rcode}).', @_;
     },
     AXFR_AVAILABLE => sub {
         __x    # NAMESERVER:AXFR_AVAILABLE
-          'Nameserver {ns} allow zone transfer using AXFR.', @_;
+          'Name server {ns} allow zone transfer using AXFR.', @_;
     },
     AXFR_FAILURE => sub {
         __x    # NAMESERVER:AXFR_FAILURE
-          'AXFR not available on nameserver {ns}.', @_;
+          'AXFR not available on name server {ns}.', @_;
     },
     BREAKS_ON_EDNS => sub {
         __x    # NAMESERVER:BREAKS_ON_EDNS
@@ -352,11 +352,11 @@ Readonly my %TAG_DESCRIPTIONS => (
     },
     CAN_BE_RESOLVED => sub {
         __x    # NAMESERVER:CAN_BE_RESOLVED
-          'All nameservers succeeded to resolve to an IP address.', @_;
+          'All name servers succeeded to resolve to an IP address.', @_;
     },
     CAN_NOT_BE_RESOLVED => sub {
         __x    # NAMESERVER:CAN_NOT_BE_RESOLVED
-          'The following nameservers failed to resolve to an IP address : {nsname_list}.', @_;
+          'The following name servers failed to resolve to an IP address : {nsname_list}.', @_;
     },
     CASE_QUERIES_RESULTS_DIFFER => sub {
         __x    # NAMESERVER:CASE_QUERIES_RESULTS_DIFFER
@@ -369,33 +369,33 @@ Readonly my %TAG_DESCRIPTIONS => (
     CASE_QUERY_DIFFERENT_ANSWER => sub {
         __x    # NAMESERVER:CASE_QUERY_DIFFERENT_ANSWER
           'When asked for {type} records on "{query1}" and "{query2}", '
-          . 'nameserver {ns} returns different answers.',
+          . 'name server {ns} returns different answers.',
           @_;
     },
     CASE_QUERY_DIFFERENT_RC => sub {
         __x    # NAMESERVER:CASE_QUERY_DIFFERENT_RC
           'When asked for {type} records on "{query1}" and "{query2}", '
-          . 'nameserver {ns} returns different RCODE ("{rcode1}" vs "{rcode2}").',
+          . 'name server {ns} returns different RCODE ("{rcode1}" vs "{rcode2}").',
           @_;
     },
     CASE_QUERY_NO_ANSWER => sub {
         __x    # NAMESERVER:CASE_QUERY_NO_ANSWER
-          'When asked for {type} records on "{domain}", nameserver {ns} returns nothing.', @_;
+          'When asked for {type} records on "{domain}", name server {ns} returns nothing.', @_;
     },
     CASE_QUERY_SAME_ANSWER => sub {
         __x    # NAMESERVER:CASE_QUERY_SAME_ANSWER
-          'When asked for {type} records on "{query1}" and "{query2}", nameserver {ns} returns same answers.',
+          'When asked for {type} records on "{query1}" and "{query2}", name server {ns} returns same answers.',
           @_;
     },
     CASE_QUERY_SAME_RC => sub {
         __x    # NAMESERVER:CASE_QUERY_SAME_RC
           'When asked for {type} records on "{query1}" and "{query2}", '
-          . 'nameserver {ns} returns same RCODE "{rcode}".',
+          . 'name server {ns} returns same RCODE "{rcode}".',
           @_;
     },
     DIFFERENT_SOURCE_IP => sub {
         __x    # NAMESERVER:DIFFERENT_SOURCE_IP
-          'Nameserver {ns} replies on a SOA query with a different source address ({source}).', @_;
+          'Name server {ns} replies on a SOA query with a different source address ({source}).', @_;
     },
     EDNS_RESPONSE_WITHOUT_EDNS => sub {
         __x    # NAMESERVER:EDNS_RESPONSE_WITHOUT_EDNS
@@ -409,7 +409,7 @@ Readonly my %TAG_DESCRIPTIONS => (
     },
     EDNS0_SUPPORT => sub {
         __x    # NAMESERVER:EDNS0_SUPPORT
-          'The following nameservers support EDNS0 : {ns_list}.', @_;
+          'The following name servers support EDNS0 : {ns_list}.', @_;
     },
     IPV4_DISABLED => sub {
         __x    # NAMESERVER:IPV4_DISABLED
@@ -421,23 +421,23 @@ Readonly my %TAG_DESCRIPTIONS => (
     },
     IS_A_RECURSOR => sub {
         __x    # NAMESERVER:IS_A_RECURSOR
-          'Nameserver {ns} is a recursor.', @_;
+          'Name server {ns} is a recursor.', @_;
     },
     MISSING_OPT_IN_TRUNCATED => sub {
         __x    # NAMESERVER:MISSING_OPT_IN_TRUNCATED
-          'Nameserver {ns} replies on an EDNS query with a truncated response without EDNS.', @_;
+          'Name server {ns} replies on an EDNS query with a truncated response without EDNS.', @_;
     },
     NO_EDNS_SUPPORT => sub {
         __x    # NAMESERVER:NO_EDNS_SUPPORT
-          'Nameserver {ns} does not support EDNS0 (replies with FORMERR).', @_;
+          'Name server {ns} does not support EDNS0 (replies with FORMERR).', @_;
     },
     NO_RECURSOR => sub {
         __x    # NAMESERVER:NO_RECURSOR
-          'Nameserver {ns} is not a recursor.', @_;
+          'Name server {ns} is not a recursor.', @_;
     },
     NO_RESOLUTION => sub {
         __x    # NAMESERVER:NO_RESOLUTION
-          "No nameserver was successfully resolved to an IP address.", @_;
+          "No name server was successfully resolved to an IP address.", @_;
     },
     NO_RESPONSE => sub {
         __x    # NAMESERVER:NO_RESPONSE
@@ -445,23 +445,23 @@ Readonly my %TAG_DESCRIPTIONS => (
     },
     NO_UPWARD_REFERRAL => sub {
         __x    # NAMESERVER:NO_UPWARD_REFERRAL
-          'None of the following nameservers returns an upward referral : {nsname_list}.', @_;
+          'None of the following name servers returns an upward referral : {nsname_list}.', @_;
     },
     NS_ERROR => sub {
         __x    # NAMESERVER:NS_ERROR
-          'Erroneous response from nameserver {ns}.', @_;
+          'Erroneous response from name server {ns}.', @_;
     },
     N10_EDNS_RESPONSE_ERROR => sub {
         __x    # NAMESERVER:N10_EDNS_RESPONSE_ERROR
-          'Expected RCODE but received erroneous response to an EDNS version 1 query. Fetched from the nameservers with IP addresses {ns_ip_list}', @_;
+          'Expected RCODE but received erroneous response to an EDNS version 1 query. Fetched from the name servers with IP addresses {ns_ip_list}', @_;
     },
     N10_NO_RESPONSE_EDNS1_QUERY => sub {
         __x    # NAMESERVER:N10_NO_RESPONSE_EDNS1_QUERY
-          'No response to an EDNS version 1 query. Fetched from the nameservers with IP addresses {ns_ip_list}', @_;
+          'No response to an EDNS version 1 query. Fetched from the name servers with IP addresses {ns_ip_list}', @_;
     },
     N10_UNEXPECTED_RCODE => sub {
         __x    # NAMESERVER:N10_UNEXPECTED_RCODE
-          'Erroneous RCODE ("{rcode}") in response to an EDNS version 1 query. Fetched from the nameservers with IP addresses {ns_ip_list}', @_;
+          'Erroneous RCODE ("{rcode}") in response to an EDNS version 1 query. Fetched from the name servers with IP addresses {ns_ip_list}', @_;
     },
     N11_NO_EDNS => sub {
         __x    # NAMESERVER:N11_N11_NO_EDNS
@@ -505,15 +505,15 @@ Readonly my %TAG_DESCRIPTIONS => (
     },
     QNAME_CASE_INSENSITIVE => sub {
         __x    # NAMESERVER:QNAME_CASE_INSENSITIVE
-          'Nameserver {ns} does not preserve original case of the queried name ({domain}).', @_;
+          'Name server {ns} does not preserve original case of the queried name ({domain}).', @_;
     },
     QNAME_CASE_SENSITIVE => sub {
         __x    # NAMESERVER:QNAME_CASE_SENSITIVE
-          "Nameserver {ns} preserves original case of queried names ({domain}).", @_;
+          "Name server {ns} preserves original case of queried names ({domain}).", @_;
     },
     SAME_SOURCE_IP => sub {
         __x    # NAMESERVER:SAME_SOURCE_IP
-          'All nameservers reply with same IP used to query them.', @_;
+          'All name servers reply with same IP used to query them.', @_;
     },
     TEST_CASE_END => sub {
         __x    # NAMESERVER:TEST_CASE_END
@@ -525,7 +525,7 @@ Readonly my %TAG_DESCRIPTIONS => (
     },
     UPWARD_REFERRAL => sub {
         __x    # NAMESERVER:UPWARD_REFERRAL
-          'Nameserver {ns} returns an upward referral.', @_;
+          'Name server {ns} returns an upward referral.', @_;
     },
     UPWARD_REFERRAL_IRRELEVANT => sub {
         __x    # NAMESERVER:UPWARD_REFERRAL_IRRELEVANT
@@ -533,7 +533,7 @@ Readonly my %TAG_DESCRIPTIONS => (
     },
     Z_FLAGS_NOTCLEAR => sub {
         __x    # NAMESERVER:Z_FLAGS_NOTCLEAR
-          'Nameserver {ns} has one or more unknown EDNS Z flag bits set.', @_;
+          'Name server {ns} has one or more unknown EDNS Z flag bits set.', @_;
     },
 );
 
